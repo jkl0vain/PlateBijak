@@ -1,0 +1,98 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.runRules = runRules;
+const commonMakes = new Set([
+    'Toyota', 'Honda', 'Nissan', 'Mazda', 'Mitsubishi', 'Hyundai', 'Kia',
+    'BMW', 'Mercedes-Benz', 'Audi', 'Volkswagen', 'Ford', 'Chevrolet',
+    'Subaru', 'Lexus', 'Infiniti', 'Acura', 'Volvo', 'Jaguar', 'Land Rover'
+]);
+function runRules(d, ctx) {
+    const out = [];
+    // Plate format
+    if (d.plateNumber) {
+        const clean = d.plateNumber.toUpperCase().replace(/\s/g, '');
+        const regex = /^[A-Z]{1,3}\d{1,4}[A-Z]?$/;
+        if (!regex.test(clean)) {
+            out.push({ field: 'plateNumber', type: 'error', code: 'PLATE_FORMAT',
+                message: 'Invalid plate number format', weight: 15 });
+        }
+        else {
+            if (/(.)\1{3,}/.test(clean) || /(0000|1111|2222|3333|4444|5555|6666|7777|8888|9999)/.test(clean)) {
+                out.push({ field: 'plateNumber', type: 'warning', code: 'PLATE_SUSPICIOUS',
+                    message: 'Suspicious repeated/sequential pattern', weight: 10 });
+            }
+        }
+    }
+    // Make sanity
+    if (d.make) {
+        if (!commonMakes.has(d.make.trim())) {
+            out.push({ field: 'make', type: 'info', code: 'MAKE_UNCOMMON',
+                message: 'Uncommon vehicle make', weight: 5 });
+        }
+    }
+    // Year sanity
+    if (d.year) {
+        const year = Number(d.year);
+        const now = new Date().getFullYear();
+        if (Number.isNaN(year) || d.year.length !== 4) {
+            out.push({ field: 'year', type: 'error', code: 'YEAR_INVALID',
+                message: 'Year must be a 4-digit number', weight: 15 });
+        }
+        else if (year < 1980 || year > now + 1) {
+            out.push({ field: 'year', type: 'warning', code: 'YEAR_OUT_OF_RANGE',
+                message: `Unusual year ${year}`, weight: 8 });
+        }
+    }
+    // Engine capacity (liters)
+    if (d.engineCapacity) {
+        const cc = Number(d.engineCapacity);
+        if (Number.isNaN(cc) || cc <= 0) {
+            out.push({ field: 'engineCapacity', type: 'error', code: 'CC_INVALID',
+                message: 'Engine capacity must be a positive number', weight: 10 });
+        }
+        else if (cc < 0.5 || cc > 8) {
+            out.push({ field: 'engineCapacity', type: 'warning', code: 'CC_EXTREME',
+                message: 'Very unusual engine capacity', weight: 6 });
+        }
+    }
+    // VIN (format + check digit)
+    if (d.chassisNumber) {
+        out.push(...vinFindings(d.chassisNumber));
+    }
+    // Behavior signals
+    if ((ctx.attemptsFromIp ?? 0) > 10) {
+        out.push({ field: 'behavior', type: 'warning', code: 'IP_BURST',
+            message: 'High submission volume from this IP', weight: 12 });
+    }
+    if ((ctx.recentFromFingerprint ?? 0) > 5) {
+        out.push({ field: 'behavior', type: 'warning', code: 'DEVICE_BURST',
+            message: 'Many attempts from this device', weight: 10 });
+    }
+    return out;
+}
+// -- VIN helpers
+const vin_1 = require("./vin");
+function vinFindings(vinRaw) {
+    const vin = (0, vin_1.normalizeVIN)(vinRaw);
+    const f = [];
+    if (vin.length !== 17) {
+        f.push({ field: 'chassisNumber', type: 'error', code: 'VIN_LEN',
+            message: 'VIN must be exactly 17 characters', weight: 15 });
+        return f;
+    }
+    if (!(0, vin_1.isValidVINFormat)(vin)) {
+        f.push({ field: 'chassisNumber', type: 'error', code: 'VIN_CHARS',
+            message: 'VIN contains invalid characters (I,O,Q not allowed)', weight: 15 });
+        return f;
+    }
+    const chk = (0, vin_1.verifyVINCheckDigit)(vin);
+    if (!chk.ok) {
+        f.push({ field: 'chassisNumber', type: 'warning', code: 'VIN_CHECK',
+            message: `VIN check digit mismatch`, details: [`Expected ${chk.expected}, got ${chk.actual}`], weight: 12 });
+    }
+    else {
+        f.push({ field: 'chassisNumber', type: 'success', code: 'VIN_OK',
+            message: 'VIN format & check digit OK' });
+    }
+    return f;
+}

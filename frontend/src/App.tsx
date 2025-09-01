@@ -18,20 +18,48 @@ function App() {
   })
   const [validationResults, setValidationResults] = useState<ValidationResult[]>([])
   const [isValidating, setIsValidating] = useState(false)
+  //newly added - fraud detection
+  const [riskScore, setRiskScore] = useState<number | null>(null)
+  const [action, setAction] = useState<'allow' | 'review' | 'block' | null>(null)
 
   const handleValidation = async (data: VehicleData) => {
     setIsValidating(true)
     setVehicleData(data)
-    
-    // Simulate API call with realistic validation logic
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    const results = validateVehicleData(data)
-    setValidationResults(results)
-    setIsValidating(false)
+
+    // ada fingerprint (currently based on browser)
+    const fp = localStorage.getItem('svv_fp') || cryptoRandom();
+    localStorage.setItem('svv_fp', fp);
+
+    try {
+      const resp = await fetch('http://localhost:4000/api/validate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, fingerprint: fp })
+      })
+      const json = await resp.json()
+      setValidationResults(json.results)
+      //fraud detection
+      setRiskScore(json.riskScore)
+      setAction(json.action)
+
+    } catch (e) {
+      setValidationResults([{
+        field: 'behavior',
+        type: 'error',
+        message: 'Server error during validation',
+        reason: (e as Error).message
+      } as any])
+    } finally {
+      setIsValidating(false)
+    }
   }
 
-  const validateVehicleData = (data: VehicleData): ValidationResult[] => {
+  function cryptoRandom() {
+    return (crypto as any)?.randomUUID?.() ?? Math.random().toString(36).slice(2)
+  }
+
+  //semua ni dah edit dekat backend, TAPI JANGAN DELETE LAGI
+  /*const validateVehicleData = (data: VehicleData): ValidationResult[] => {
     const results: ValidationResult[] = []
     
     // Plate number validation with detailed reasons
@@ -460,9 +488,9 @@ function App() {
     }
 
     return results
-  }
+  }*/
 
-  const findClosestMatch = (input: string, options: string[]) => {
+  /*const findClosestMatch = (input: string, options: string[]) => {
     let minDistance = Infinity
     let closestMatch = ''
     
@@ -475,9 +503,9 @@ function App() {
     })
     
     return { match: closestMatch, distance: minDistance }
-  }
+  }*/
 
-  const levenshteinDistance = (str1: string, str2: string): number => {
+  /*const levenshteinDistance = (str1: string, str2: string): number => {
     const matrix: number[][] = []
 
     for (let i = 0; i <= str2.length; i++) {
@@ -503,7 +531,7 @@ function App() {
     }
     
     return matrix[str2.length][str1.length]
-  }
+  }*/
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -532,6 +560,9 @@ function App() {
                 results={validationResults}
                 isValidating={isValidating}
                 vehicleData={vehicleData}
+                //tambah baru untuk fraud detection
+                riskScore={riskScore}
+                action={action}
               />
             </div>
           </div>

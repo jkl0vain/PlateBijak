@@ -8,12 +8,14 @@ export interface VehicleData {
   chassisNumber: string
 }
 
+export type ValidationField = keyof VehicleData | 'behavior'
+
 export interface ValidationResult {
-  field: keyof VehicleData
+  field?: ValidationField
   type: 'success' | 'warning' | 'error' | 'info'
   message: string
   suggestion?: string
-  confidence: number
+  confidence?: number
   reason?: string
   details?: string[]
 }

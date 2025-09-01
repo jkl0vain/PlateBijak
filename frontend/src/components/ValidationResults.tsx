@@ -6,12 +6,17 @@ interface ValidationResultsProps {
   results: ValidationResult[]
   isValidating: boolean
   vehicleData: VehicleData
+  //newly added for fraud detection
+  riskScore?: number | null
+  action?: 'allow' | 'review' | 'block' | null
 }
 
 export const ValidationResults: React.FC<ValidationResultsProps> = ({ 
   results, 
   isValidating, 
-  vehicleData 
+  vehicleData,
+  riskScore,
+  action
 }) => {
   const [expandedResults, setExpandedResults] = useState<Set<number>>(new Set())
 
@@ -51,8 +56,8 @@ export const ValidationResults: React.FC<ValidationResultsProps> = ({
     }
   }
 
-  const getFieldLabel = (field: keyof VehicleData) => {
-    const labels = {
+  const getFieldLabel = (field?: ValidationResult['field']) => {
+  const labels: Record<keyof VehicleData, string> = {
       plateNumber: 'Plate Number',
       make: 'Vehicle Make',
       model: 'Model',
@@ -61,8 +66,12 @@ export const ValidationResults: React.FC<ValidationResultsProps> = ({
       color: 'Color',
       chassisNumber: 'Chassis Number'
     }
-    return labels[field]
+    if (!field) return 'General'
+    if (field === 'behavior') return 'Suspicious Behavior'
+    return labels[field as keyof VehicleData] ?? 'General'
   }
+
+
 
   const hasData = Object.values(vehicleData).some(value => value.trim() !== '')
   const successCount = results.filter(r => r.type === 'success').length
@@ -71,12 +80,39 @@ export const ValidationResults: React.FC<ValidationResultsProps> = ({
 
   return (
     <div className="bg-white rounded-xl shadow-lg p-6">
-      <div className="flex items-center space-x-3 mb-6">
-        <div className="bg-green-100 p-2 rounded-lg">
-          <CheckCircle className="h-5 w-5 text-green-600" />
-        </div>
-        <h2 className="text-xl font-semibold text-gray-900">Validation Results</h2>
+          
+    {/* Header */}
+    <div className="flex items-center space-x-3 mb-4">
+      <div className="bg-green-100 p-2 rounded-lg">
+        <CheckCircle className="h-5 w-5 text-green-600" />
       </div>
+      <h2 className="text-xl font-semibold text-gray-900">Validation Results</h2>
+    </div>
+
+    {/* Risk Badge */}
+    {typeof riskScore === 'number' && action && (
+      <div
+        className={[
+          'mb-4 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-sm',
+          action === 'allow'
+            ? 'bg-green-50 text-green-700 border-green-200'
+            : action === 'review'
+            ? 'bg-yellow-50 text-yellow-700 border-yellow-200'
+            : 'bg-red-50 text-red-700 border-red-200'
+        ].join(' ')}
+      >
+        <span className="font-semibold">Risk {riskScore}</span>
+        <span className="opacity-60">•</span>
+        <span className="uppercase font-semibold">{action}</span>
+      </div>
+    )}
+
+    {/* Block Warning */}
+    {action === 'block' && (
+      <div className="mb-6 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700">
+        🚫 We detected high-risk activity. Please verify your details or try again later.
+      </div>
+    )}
 
       {isValidating ? (
         <div className="flex items-center justify-center py-12">
@@ -136,22 +172,24 @@ export const ValidationResults: React.FC<ValidationResultsProps> = ({
                             {getFieldLabel(result.field)}
                           </h4>
                           <div className="flex items-center space-x-2">
+                          {typeof result.confidence === 'number' && (
                             <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded-full">
                               {Math.round(result.confidence * 100)}% confidence
                             </span>
-                            {hasDetails && (
-                              <button
-                                onClick={() => toggleExpanded(index)}
-                                className="text-gray-500 hover:text-gray-700 transition-colors"
-                              >
-                                {isExpanded ? (
-                                  <ChevronUp className="h-4 w-4" />
-                                ) : (
-                                  <ChevronDown className="h-4 w-4" />
-                                )}
-                              </button>
-                            )}
-                          </div>
+                          )}
+                          {hasDetails && (
+                            <button
+                              onClick={() => toggleExpanded(index)}
+                              className="text-gray-500 hover:text-gray-700 transition-colors"
+                            >
+                              {isExpanded ? (
+                                <ChevronUp className="h-4 w-4" />
+                              ) : (
+                                <ChevronDown className="h-4 w-4" />
+                              )}
+                            </button>
+                          )}
+                        </div>
                         </div>
                         
                         <p className="text-gray-700 mb-2">{result.message}</p>
