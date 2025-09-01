@@ -30,6 +30,45 @@ function runRules(d, ctx) {
                 message: 'Uncommon vehicle make', weight: 5 });
         }
     }
+
+    //Cross check maker dengan model
+    if (d.make && d.model) {
+        const combos = {
+            Toyota: ['Vios', 'Corolla', 'Camry', 'Hilux'],
+            Honda: ['Civic', 'Accord', 'City', 'CR-V'],
+            Nissan: ['Almera', 'X-Trail', 'Navara'],
+            Mazda: ['CX-5', 'Mazda3', 'Mazda6'],
+            Mitsubishi: ['ASX', 'Outlander', 'Triton'],
+            Hyundai: ['Elantra', 'Tucson', 'Santa Fe'],
+            Kia: ['Rio', 'Sportage', 'Sorento'],
+            BMW: ['3 Series', '5 Series', 'X5'],
+            'Mercedes-Benz': ['C-Class', 'E-Class', 'GLC'],
+            Audi: ['A3', 'A4', 'Q5'],
+            Volkswagen: ['Golf', 'Passat', 'Tiguan'],
+            Ford: ['Focus', 'Ranger', 'Everest'],
+            Chevrolet: ['Cruze', 'Colorado', 'Captiva'],
+            Subaru: ['Impreza', 'Forester', 'XV'],
+            Lexus: ['IS', 'RX', 'NX'],
+            Infiniti: ['Q50', 'QX60'],
+            Acura: ['ILX', 'RDX', 'MDX'],
+            Volvo: ['S60', 'XC60', 'XC90'],
+            Jaguar: ['XE', 'XF', 'F-PACE'],
+            'Land Rover': ['Range Rover', 'Discovery', 'Defender']
+        };
+
+        const validModels = combos[d.make] || [];
+        if (validModels.length && !validModels.includes(d.model)) {
+            out.push({
+                field: 'model',
+                type: 'error',
+                code: 'MODEL_MISMATCH',
+                message: `Model "${d.model}" does not belong to make "${d.make}"`,
+                details: [`Valid models for ${d.make}: ${validModels.join(', ')}`],
+                weight: 20
+            });
+        }
+    }
+    
     // Year sanity
     if (d.year) {
         const year = Number(d.year);
