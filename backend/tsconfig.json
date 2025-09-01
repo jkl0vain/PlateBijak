@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                  // decide what kind if S is generated -> modern JS output, Node.js friendly
+    "module": "CommonJS",                // Node.js uses CommonJS (require)
+    "outDir": "dist",                    // compiled JS goes here
+    "rootDir": "src",                    // TS code is in src/
+    "strict": true,                      // enable all strict checks
+    "esModuleInterop": true,             // allow import express from "express"
+    "skipLibCheck": true,                // skip type check for node_modules
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"]                     // helps Node globals (process, __dirname, etc.)
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

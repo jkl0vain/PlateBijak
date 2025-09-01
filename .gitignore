@@ -1,2 +1,5 @@
-node_modules/
+#node dependecies
+node_modules
 
+#environment nanti
+.env
