@@ -40,7 +40,7 @@ function App() {
       const cleanPlate = data.plateNumber.toUpperCase().replace(/\s/g, '')
       
       if (!platePattern.test(data.plateNumber.toUpperCase())) {
-        const issues = []
+        const issues: string[] = []
         
         // Check for common issues
         if (!/^[A-Z]/.test(cleanPlate)) {
@@ -123,7 +123,7 @@ function App() {
         })
       } else if (closestMatch.distance > 0 && closestMatch.distance <= 2) {
         // Typo detected
-        const typoReasons = []
+        const typoReasons: string[] = []
         if (Math.abs(data.make.length - closestMatch.match.length) > 0) {
           typoReasons.push('Length mismatch detected')
         }
@@ -346,7 +346,7 @@ function App() {
         })
       } else {
         // Additional VIN validation checks
-        const warnings = []
+        const warnings: string[] = []
         
         // Check for suspicious patterns
         if (/(.)\1{4,}/.test(vin)) {
@@ -478,8 +478,8 @@ function App() {
   }
 
   const levenshteinDistance = (str1: string, str2: string): number => {
-    const matrix = []
-    
+    const matrix: number[][] = []
+
     for (let i = 0; i <= str2.length; i++) {
       matrix[i] = [i]
     }
