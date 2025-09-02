@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "opportune-balm-470504-q9",
+  "private_key_id": "3df45d1e499f13a17698ca262e21a562423a7fd7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDNCkBMgrMXICBT\nZKmQDt6HwNBYrF5jqfExiSHrtsZptVORA4zE1UnlN4OzefqLvDr6Fo3zKZwvemft\nP6NFHDYfKBQMgIbnSitv+GERF8SCk9US1+k6moF0SjqyOlyi/XS8LB9STzjq9VKc\nXYYXM04i6ZpAl+Ui+SWm8YOiw5i9NRCKxdyz8xYHku2oU9G8XLq964Oo0DupHIal\nrUk8XBaON/hMaAlElXxJa8fuCD129/cpxjktvWHo3BJKPMI4VlOiKxylI6i/AUSq\n1zI6+gD4nUvqG26D3g4DhKMVbHwV4b83/8ZqyxkPi4GgzfrWiEyy7aI95t7lQ+fa\n6o6Qko2dAgMBAAECggEABBs283FQpd9qVlE3Rh/OHBjj80qsb0GJh4zwBXj5G0fa\n3xYbnRuKadFFTXRdbKv94GFQQXTtYFQKvcke+3TXrqMOV7vBN+OX4Buw0fdQY68T\nPtfdH2PVwN71svkRPuBllJkrnWnhwW7dUy1aUJ+h6ngUM0P3fk5QDzpaAQn6xps+\nxj87dfyqgQbyo1sxNlbkC9baH+5Z5CvDn32+a3aHnusApJGTXuVmbVly/pWP3mRM\n8JywESz9EY4uf/oCGtsBReCCC2Tv4+PeVZfw451+aV0rQV4TLXx5IRbqPp8QH2Dr\nPGQlrPY78Z/yg9/THgqwSciRI4cOgcLuiOpL4d04zwKBgQDqN2QUXrXv3FQew/Bq\nRs2D4z6/7vMUs4SHbD/o+wb8Ondc2LHQY1+itiy1PdIG/5dF05fLLIzie0rdvocJ\no/fYT6IhOROJLHmQQfDPAhnEreZruXC///eC7C7UvlCtakMjtdFPHi0b3lwxaoI+\n5tO/vPeVukKPodwKymNamOInNwKBgQDgHC6juAF3XltyrD9njPHuQGl66wVE5RT3\nFH3f+JbqQhOWj9qDS8BFSlKbs+ga+T8UcBkJe/YIibPpttBUQQ/zM8KiTe6FB+X3\naoEQUOO9u9OGRBtpEPzzhuTO6xb7JxOdGx8kSQa/fLCBTSXMipxl2/NVWJiApVTi\n2SrjL76zywKBgGZGbdNfUD8/jRQqJ6+g31l6QAp8A3XEtliUcowAIhq+RSUsEumW\nm0poFrnGFxKrRZlePmigOZ0kjZqq+jjBexbgH0I2tEswOp09zjP3DN2PupDL12pg\nEer/y6tmt8AiKNNNL+tGmBgVT1jc06c4ELsnf03Imgwyd+3WVvBW1lqdAoGBAIMM\nl81OxTS7LXiB9tWjmrk6WzPwiHVADCFrjyvQHte/adrqJdoPCtC55FJ+QmS7iUJ3\nRnzASx+0/krVhz8tiJkrlE36ilaqRrSGSBB1bKc/VTK3Utv+fhwdrmC9IgQdVp/R\nA0XhmhuRW1lQ9qCEEW6SztkCZLMdeuToHucYvUg/AoGAOeDdsh6UqyyZYx9FI9i+\nCdnN5ha21wAJlVv7Zu3oSgY8ycQphNcKmwWY89+2YcpsGjLc6ZshFpeb4875lJ1D\n2lzmmUMgCbXEYKztszmkqGryrhMu1trNLdjvL5Cwoop79hFnJhSCE8WXABADkz/S\nFFVq8z64xmYzvhG2xs5e5HA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech-service@opportune-balm-470504-q9.iam.gserviceaccount.com",
+  "client_id": "100798975369603948250",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech-service%40opportune-balm-470504-q9.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

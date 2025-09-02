@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Car, Loader2, Zap, Camera } from 'lucide-react'
+import { Car, Loader2, Zap, Camera, Mic } from 'lucide-react'
 import { VehicleData } from '../types/vehicle'
 import { PlateScanner } from './PlateScanner'
 import { normalizePlate, isValidPlate } from '../utils/plate'
+import RecordRTC, { StereoAudioRecorder } from "recordrtc";
 
 interface VehicleFormProps {
   onValidate: (data: VehicleData) => void
@@ -19,16 +20,17 @@ export const VehicleForm: React.FC<VehicleFormProps> = ({
   const [realTimeValidation, setRealTimeValidation] = useState(true)
   const [showScanner, setShowScanner] = useState(false)
   const debounceRef = useRef<number | undefined>(undefined)
+  const [isRecording, setIsRecording] = useState(false);
+
 
   useEffect(() => { setFormData(initialData) }, [initialData])
 
-  const handleInputChange = (field: keyof VehicleData, value: string) => {
-    const newData = { ...formData, [field]: value }
-    setFormData(newData)
+  const handleInputChange = (field: keyof VehicleData, value: any) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
 
     if (realTimeValidation && value.length > 2) {
       if (debounceRef.current) window.clearTimeout(debounceRef.current)
-      debounceRef.current = window.setTimeout(() => onValidate(newData), 500)
+      //debounceRef.current = window.setTimeout(() => onValidate(newData), 500)
     }
   }
 
@@ -37,8 +39,91 @@ export const VehicleForm: React.FC<VehicleFormProps> = ({
     onValidate(formData)
   }
 
+
+    // Generic mic recording for any field
+  const startRecording = async (field: keyof VehicleData) => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      console.log("🎤 Microphone access granted");
+
+      const recorder = new RecordRTC(stream, {
+        type: "audio",
+        mimeType: "audio/wav",
+        recorderType: StereoAudioRecorder,
+        numberOfAudioChannels: 1,
+        desiredSampRate: 16000,
+      });
+
+      recorder.startRecording();
+      setIsRecording(true);
+      console.log("⏺️ Recording started...");
+
+      setTimeout(() => {
+        recorder.stopRecording(async () => {
+          setIsRecording(false);
+          console.log("🛑 Recording stopped");
+
+          const blob = recorder.getBlob();
+          if (!blob) {
+            console.error("❌ Recorder returned null blob");
+            stream.getTracks().forEach((t) => t.stop());
+            return;
+          }
+
+          const file = new File([blob], "voice.wav", { type: "audio/wav" });
+          const fd = new FormData();
+          fd.append("audio", file);
+
+          console.log("📤 Sending file to backend...", file);
+
+          try {
+            const res = await fetch("http://localhost:5000/api/transcribe", {
+              method: "POST",
+              body: fd,
+            });
+
+            const data = await res.json();
+            console.log("📝 Transcription result:", data);
+
+            if (data.text) {
+              handleInputChange(field, data.text); // update correct field
+            } else {
+              console.warn("⚠️ No text returned from backend");
+            }
+          } catch (err) {
+            console.error("❌ Fetch/transcription failed:", err);
+          } finally {
+            stream.getTracks().forEach((t) => t.stop());
+            console.log("🧹 Microphone tracks stopped");
+          }
+        });
+      }, 5000);
+    } catch (err) {
+      console.error("❌ Microphone error:", err);
+      setIsRecording(false);
+    }
+  };
+
   const inputClasses =
     "w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+
+  // Reusable mic button component
+const MicButton = ({ field }: { field: keyof VehicleData }) => (
+  <button
+    type="button"
+    onClick={() => startRecording(field)}
+    className={`absolute right-3 top-1/2 -translate-y-3/2
+      flex items-center justify-center transition-colors duration-200 ${
+        isRecording ? "text-blue-500" : "text-gray-400"
+      }`}
+  >
+    <Mic
+      className={`h-6 w-6 ${isRecording ? "animate-pulse" : ""}`}
+      aria-hidden="true"
+    />
+    <span className="sr-only">Start voice input</span>
+  </button>
+);
 
   return (
     <div className="bg-white rounded-xl shadow-lg p-6">
@@ -125,36 +210,40 @@ export const VehicleForm: React.FC<VehicleFormProps> = ({
             />
           </div>
 
-          {/* Vehicle Make Section */}
-          <div>
+          {/* Vehicle Make */}
+          <div className="relative">
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              Vehicle Make <span className="text-red-500">*</span>
+              Vehicle Make *
             </label>
             <input
               type="text"
               value={formData.make}
-              onChange={(e) => handleInputChange('make', e.target.value)}
+              onChange={(e) => handleInputChange("make", e.target.value)}
               placeholder="e.g., Toyota"
-              className={inputClasses}
+              className={`${inputClasses} pr-12`}
               required
             />
+            <MicButton field="make" />
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-4">
-          <div>
+          {/* Model */}
+          <div className="relative">
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Model *
             </label>
             <input
               type="text"
               value={formData.model}
-              onChange={(e) => handleInputChange('model', e.target.value)}
+              onChange={(e) => handleInputChange("model", e.target.value)}
               placeholder="e.g., Camry"
-              className={inputClasses}
+              className={`${inputClasses} pr-12`}
               required
             />
+            <MicButton field="model" />
           </div>
 
+          {/* Year of Manufacture */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Year of Manufacture *
@@ -173,6 +262,7 @@ export const VehicleForm: React.FC<VehicleFormProps> = ({
         </div>
 
         <div className="grid md:grid-cols-2 gap-4">
+          {/* Engine Capacity */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Engine Capacity (L)
@@ -187,20 +277,23 @@ export const VehicleForm: React.FC<VehicleFormProps> = ({
             />
           </div>
 
-          <div>
+          {/* Color */}
+          <div className="relative">
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Color
             </label>
             <input
               type="text"
               value={formData.color}
-              onChange={(e) => handleInputChange('color', e.target.value)}
+              onChange={(e) => handleInputChange("color", e.target.value)}
               placeholder="e.g., White"
-              className={inputClasses}
+              className={`${inputClasses} pr-12`}
             />
+            <MicButton field="color" />
           </div>
         </div>
 
+        {/* Chassis */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Chassis/VIN Number
@@ -243,4 +336,7 @@ export const VehicleForm: React.FC<VehicleFormProps> = ({
       )}
     </div>
   )
-}
+};
+
+export default VehicleForm;
+

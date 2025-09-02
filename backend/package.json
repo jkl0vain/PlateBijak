@@ -2,6 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,18 +11,31 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@google-cloud/speech": "^7.2.0",
+    "@google-cloud/vision": "^5.3.3",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "express-rate-limit": "^8.0.1",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.4",
     "helmet": "^8.1.0",
     "morgan": "^1.10.1",
-    "uuid": "^11.1.0"
+    "multer": "^2.0.2",
+    "node-fetch": "^3.3.2",
+    "node-wav": "^0.0.2",
+    "tmp": "^0.2.5",
+    "uuid": "^11.1.0",
+    "wav-decoder": "^1.3.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/express-rate-limit": "^5.1.3",
     "@types/helmet": "^0.0.48",
-    "@types/morgan": "^1.9.10"
+    "@types/morgan": "^1.9.10",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.9.2"
   }
 }
