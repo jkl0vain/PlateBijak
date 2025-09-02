@@ -7,4 +7,5 @@ node_modules
 backend/.env
 frontend/.env
 backend/VoiceInput/*.json 
+backend/ChatBot/.env
 

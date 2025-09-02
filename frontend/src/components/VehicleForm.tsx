@@ -4,6 +4,7 @@ import { VehicleData } from '../types/vehicle'
 import { PlateScanner } from './PlateScanner'
 import { normalizePlate, isValidPlate } from '../utils/plate'
 import RecordRTC, { StereoAudioRecorder } from "recordrtc";
+import { PlateBijakChat } from './Chatbot';
 
 interface VehicleFormProps {
   onValidate: (data: VehicleData) => void
@@ -334,7 +335,12 @@ const MicButton = ({ field }: { field: keyof VehicleData }) => (
           onClose={() => setShowScanner(false)}
         />
       )}
+
+     {/* PlateBijak Chat Assistant */}
+     <PlateBijakChat />
+
     </div>
+
   )
 };
 

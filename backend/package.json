@@ -14,6 +14,8 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@google-cloud/speech": "^7.2.0",
     "@google-cloud/vision": "^5.3.3",
+    "@google/genai": "^1.16.0",
+    "@google/generative-ai": "^0.24.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
