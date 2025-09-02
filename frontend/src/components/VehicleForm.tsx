@@ -30,7 +30,7 @@ export const VehicleForm: React.FC<VehicleFormProps> = ({
 
     if (realTimeValidation && value.length > 2) {
       if (debounceRef.current) window.clearTimeout(debounceRef.current)
-      //debounceRef.current = window.setTimeout(() => onValidate(newData), 500)
+      debounceRef.current = window.setTimeout(() => onValidate(formData), 500)
     }
   }
 
