@@ -6,4 +6,5 @@ node_modules
 .env
 backend/.env
 frontend/.env
-backend/VoiceInput/.env
+backend/VoiceInput/*.json 
+
