@@ -1,12 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.runRules = runRules;
 const commonMakes = new Set([
     'Toyota', 'Honda', 'Nissan', 'Mazda', 'Mitsubishi', 'Hyundai', 'Kia',
     'BMW', 'Mercedes-Benz', 'Audi', 'Volkswagen', 'Ford', 'Chevrolet',
     'Subaru', 'Lexus', 'Infiniti', 'Acura', 'Volvo', 'Jaguar', 'Land Rover'
 ]);
-function runRules(d, ctx) {
+export function runRules(d, ctx) {
     const out = [];
     // Plate format
     if (d.plateNumber) {
@@ -30,45 +27,6 @@ function runRules(d, ctx) {
                 message: 'Uncommon vehicle make', weight: 5 });
         }
     }
-
-    //Cross check maker dengan model
-    if (d.make && d.model) {
-        const combos = {
-            Toyota: ['Vios', 'Corolla', 'Camry', 'Hilux'],
-            Honda: ['Civic', 'Accord', 'City', 'CR-V'],
-            Nissan: ['Almera', 'X-Trail', 'Navara'],
-            Mazda: ['CX-5', 'Mazda3', 'Mazda6'],
-            Mitsubishi: ['ASX', 'Outlander', 'Triton'],
-            Hyundai: ['Elantra', 'Tucson', 'Santa Fe'],
-            Kia: ['Rio', 'Sportage', 'Sorento'],
-            BMW: ['3 Series', '5 Series', 'X5'],
-            'Mercedes-Benz': ['C-Class', 'E-Class', 'GLC'],
-            Audi: ['A3', 'A4', 'Q5'],
-            Volkswagen: ['Golf', 'Passat', 'Tiguan'],
-            Ford: ['Focus', 'Ranger', 'Everest'],
-            Chevrolet: ['Cruze', 'Colorado', 'Captiva'],
-            Subaru: ['Impreza', 'Forester', 'XV'],
-            Lexus: ['IS', 'RX', 'NX'],
-            Infiniti: ['Q50', 'QX60'],
-            Acura: ['ILX', 'RDX', 'MDX'],
-            Volvo: ['S60', 'XC60', 'XC90'],
-            Jaguar: ['XE', 'XF', 'F-PACE'],
-            'Land Rover': ['Range Rover', 'Discovery', 'Defender']
-        };
-
-        const validModels = combos[d.make] || [];
-        if (validModels.length && !validModels.includes(d.model)) {
-            out.push({
-                field: 'model',
-                type: 'error',
-                code: 'MODEL_MISMATCH',
-                message: `Model "${d.model}" does not belong to make "${d.make}"`,
-                details: [`Valid models for ${d.make}: ${validModels.join(', ')}`],
-                weight: 20
-            });
-        }
-    }
-    
     // Year sanity
     if (d.year) {
         const year = Number(d.year);
@@ -110,21 +68,21 @@ function runRules(d, ctx) {
     return out;
 }
 // -- VIN helpers
-const vin_1 = require("./vin");
+import { normalizeVIN, isValidVINFormat, verifyVINCheckDigit } from './vin.js';
 function vinFindings(vinRaw) {
-    const vin = (0, vin_1.normalizeVIN)(vinRaw);
+    const vin = normalizeVIN(vinRaw);
     const f = [];
     if (vin.length !== 17) {
         f.push({ field: 'chassisNumber', type: 'error', code: 'VIN_LEN',
             message: 'VIN must be exactly 17 characters', weight: 15 });
         return f;
     }
-    if (!(0, vin_1.isValidVINFormat)(vin)) {
+    if (!isValidVINFormat(vin)) {
         f.push({ field: 'chassisNumber', type: 'error', code: 'VIN_CHARS',
             message: 'VIN contains invalid characters (I,O,Q not allowed)', weight: 15 });
         return f;
     }
-    const chk = (0, vin_1.verifyVINCheckDigit)(vin);
+    const chk = verifyVINCheckDigit(vin);
     if (!chk.ok) {
         f.push({ field: 'chassisNumber', type: 'warning', code: 'VIN_CHECK',
             message: `VIN check digit mismatch`, details: [`Expected ${chk.expected}, got ${chk.actual}`], weight: 12 });

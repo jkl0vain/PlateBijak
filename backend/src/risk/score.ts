@@ -1,4 +1,4 @@
-import type { Finding } from './rules';
+import type { Finding } from './rules.js';
 
 export function computeRiskScore(findings: Finding[]) {
   // Sum weights (errors heavier than warnings)

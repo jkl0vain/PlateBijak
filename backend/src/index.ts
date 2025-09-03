@@ -5,9 +5,13 @@ import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
 import crypto from 'crypto';
 
-import { runRules, VehicleData } from './risk/rules';
-import { computeRiskScore } from './risk/score';
-import { appendAudit, readAudits } from './storage/audit';
+console.log("🚀 Starting backend...");
+import { runRules, VehicleData } from './risk/rules.js';
+console.log("✅ rules imported");
+import { computeRiskScore } from './risk/score.js';
+console.log("✅ score imported");
+import { appendAudit, readAudits } from './storage/audit.js';
+console.log("✅ audit imported");
 
 const app = express();
 app.use(express.json());

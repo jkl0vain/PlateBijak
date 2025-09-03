@@ -6,6 +6,7 @@ import cors from "cors";
 import fs from "fs";
 import ffmpeg from "fluent-ffmpeg";
 import tmp from "tmp";
+import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
 
 const app = express();
 const upload = multer({ storage: multer.memoryStorage() });

@@ -86,7 +86,7 @@ export function runRules(d: VehicleData, ctx: {ip?:string, attemptsFromIp?:numbe
 }
 
 // -- VIN helpers
-import { normalizeVIN, isValidVINFormat, verifyVINCheckDigit } from './vin';
+import { normalizeVIN, isValidVINFormat, verifyVINCheckDigit } from './vin.js';
 function vinFindings(vinRaw: string): Finding[] {
   const vin = normalizeVIN(vinRaw);
   const f: Finding[] = [];

@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.computeRiskScore = computeRiskScore;
-function computeRiskScore(findings) {
+export function computeRiskScore(findings) {
     // Sum weights (errors heavier than warnings)
     let score = 0;
     for (const f of findings) {
