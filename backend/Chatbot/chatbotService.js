@@ -4,38 +4,33 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 dotenv.config();
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-
-// System prompt (instructions to AI)
 const basePrompt = "You are PlateBijak AI assistant. Answer as concisely as possible.";
 
-// 🔹 Gemini API call
+// Keep a persistent chat session so the system prompt is always used
+let chatSession = null;
+
 export async function getGeminiResponse(userMessage) {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
-    // Use systemMessage for instructions, first user message is userMessage
-    const chat = model.startChat({
-      systemMessage: basePrompt,
-      history: [
-        {
-          role: "user",
-          parts: [{ text: userMessage }],
-        },
-      ],
-      generationConfig: {
-        temperature: 0.7,
-      },
-    });
+    // Start a chat session if it doesn't exist
+    if (!chatSession) {
+      chatSession = model.startChat({
+        systemMessage: basePrompt,   // Instructions for AI
+        generationConfig: { temperature: 0.7 },
+      });
+    }
 
-    const result = await chat.sendMessage(userMessage);
-    return result.response.text(); // return AI text
+    // Send the user message to the existing session
+    const result = await chatSession.sendMessage(userMessage);
+    return result.response.text();  // return AI response
   } catch (err) {
     console.error("Error in Gemini API call:", err);
     return null; // fallback will handle
   }
 }
 
-// 🔹 Rule-based fallback
+// Rule-based fallback
 export function getChatbotResponse(userInput) {
   if (!userInput) {
     return "Hi there! How can I assist you today? You can ask me anything about PlateBijak.";
@@ -73,6 +68,7 @@ export function getChatbotResponse(userInput) {
 
   return "🤖 I’m not sure how to help with that. Try asking about plate validation, camera scan, voice input, typo correction, or suspicious activity detection.";
 }
+
 
 
 // Validation helper
