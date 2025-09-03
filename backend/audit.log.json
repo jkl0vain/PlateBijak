@@ -1791,5 +1791,668 @@
     ],
     "riskScore": 31,
     "action": "review"
+  },
+  {
+    "id": "765e76fb-10fc-4fe7-8586-9db68121c96f",
+    "ts": "2025-09-03T07:22:57.641Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "b0d73b7c3e48b7193f3a7167cd987e943f4b19ac2bb7d3b08a852b6ab1588f48",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "6dc63ed8-14cd-4517-9c7c-89bc1b77beec",
+    "ts": "2025-09-03T07:22:58.973Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "5b6345f46abbe0012c3d2b1459885376a470ad96cbd72c8fbfdadc24cb9b1c3a",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "f2f9cc26-b935-4fb5-b16c-824a0edbe47b",
+    "ts": "2025-09-03T07:23:13.352Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "5b6345f46abbe0012c3d2b1459885376a470ad96cbd72c8fbfdadc24cb9b1c3a",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "02588ff3-cad3-43d2-ac00-c16c81c2a84b",
+    "ts": "2025-09-03T07:23:27.900Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "cf197137049d9f70738d7cfefbb43a9bddac17d35cf31fd8eac8db87760f67d2",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "dce9633e-9599-49d8-9b93-3aca05185c1b",
+    "ts": "2025-09-03T07:23:52.696Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "cf197137049d9f70738d7cfefbb43a9bddac17d35cf31fd8eac8db87760f67d2",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "445629ed-4c69-4148-b5bc-c7a25b073dbe",
+    "ts": "2025-09-03T07:24:09.712Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "0ea90fa37f3be11ab8722019807e6e91d57a77104f808c790ba699f7f02fb929",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "03d0cda4-66ac-4ecd-ba19-034d86d4958f",
+    "ts": "2025-09-03T07:25:28.724Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "1a1cafd9b446fb00dbf7cea761546c298de96cc3b9da7f038c246cef16c97a53",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "425618af-0e99-4e9f-a979-db224bca43cb",
+    "ts": "2025-09-03T07:25:47.668Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "1a1cafd9b446fb00dbf7cea761546c298de96cc3b9da7f038c246cef16c97a53",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "b75afeef-d6a8-40d6-9949-ffd0968df5a4",
+    "ts": "2025-09-03T07:26:15.219Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "2d98f796dffb7f7ebe46f88936b708da6c433676a36b5e1c12d0abc2c467678b",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "86d68b8e-6eff-4cad-b300-77ab9701fd20",
+    "ts": "2025-09-03T07:26:35.252Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "ecd3c6d23f59cc69d7da6c3c572122ca9e9237e6e5813e01e70d5a352675a23f",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "741788f0-410b-4a29-9dfd-796eacf48a27",
+    "ts": "2025-09-03T07:27:17.594Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "49711d194a6797555600c870c67591564b0cd0f35a77c3da5b1c798efbc4b5d9",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "ebaa7267-2581-42a4-84e1-b52811b5388e",
+    "ts": "2025-09-03T07:27:19.358Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "49711d194a6797555600c870c67591564b0cd0f35a77c3da5b1c798efbc4b5d9",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "9e5359e3-b937-43d0-a6aa-8f1d2b42f13b",
+    "ts": "2025-09-03T07:27:47.817Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "af587e966e1df506556523163450f7a95235d5e53cbc57f91bfd441f4f0f884e",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "8e12e8a0-6fb1-4e82-a5aa-5ff25a44cd3f",
+    "ts": "2025-09-03T07:27:49.698Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "af587e966e1df506556523163450f7a95235d5e53cbc57f91bfd441f4f0f884e",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "66b20c76-ca3e-479a-bb08-f96f6de8e261",
+    "ts": "2025-09-03T07:35:35.132Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "8b08c4b9000b1b53ea055be45acccd65e3df80f0ccf589c126f2a65d1f91ea98",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "d5d98e90-1abd-4583-a785-400657347e58",
+    "ts": "2025-09-03T07:35:37.991Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "cdd4f4362880f6f0d5a0ebbd8f65588c4aa12e3fd5bf1dd1720a0a67fe83cc4d",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 43,
+    "action": "review"
+  },
+  {
+    "id": "36debfbb-1f74-4e25-9000-dc429e860fa5",
+    "ts": "2025-09-03T07:35:40.844Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "cdd4f4362880f6f0d5a0ebbd8f65588c4aa12e3fd5bf1dd1720a0a67fe83cc4d",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 43,
+    "action": "review"
+  },
+  {
+    "id": "af2cc1a3-df4c-45f3-8504-79c4e2db9917",
+    "ts": "2025-09-03T07:35:45.528Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "5bd58058fcf5b52e7a9c83ee665cd72cfa1275ede7d418edd2515cc8dc67d13f",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "4a5a2758-ac99-483b-b0f6-d077b37bbba7",
+    "ts": "2025-09-03T07:35:58.851Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "5bd58058fcf5b52e7a9c83ee665cd72cfa1275ede7d418edd2515cc8dc67d13f",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "c0039f50-1e9d-4019-b38e-5d7cb962aa37",
+    "ts": "2025-09-03T07:36:03.708Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "444e83f8691384c98105ddd90c25a9a4fdaec5984994ab61fc6914fafcf22eae",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "3308e5a5-4771-4ca7-8fe7-078863c33ed4",
+    "ts": "2025-09-03T07:36:04.648Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "fee6de3dc89f217b29410e94b019fb8c52789dd023a3b78c74c90a9a90fb7f9c",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "77357f1b-a8a3-4692-8470-25f2b0c7af48",
+    "ts": "2025-09-03T07:36:14.165Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "fee6de3dc89f217b29410e94b019fb8c52789dd023a3b78c74c90a9a90fb7f9c",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 22,
+    "action": "allow"
+  },
+  {
+    "id": "3f74e984-30b8-45b0-b738-6e0988f4f843",
+    "ts": "2025-09-03T07:36:19.730Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "60d00ec129b86b4d6270c48c250fc76a83898aab1c039d2ce3c233121f1fec35",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 43,
+    "action": "review"
+  },
+  {
+    "id": "37f4a11e-7848-418f-b936-5c1b6e2d8194",
+    "ts": "2025-09-03T07:36:24.755Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "1d6c6ffa7fc218533ee25537db5e380ede4026aaa874ce65ebf75bb349b44bd7",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 43,
+    "action": "review"
+  },
+  {
+    "id": "3845903a-110e-4e4a-8074-beb2bdbac79f",
+    "ts": "2025-09-03T07:36:27.012Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "1d6c6ffa7fc218533ee25537db5e380ede4026aaa874ce65ebf75bb349b44bd7",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 43,
+    "action": "review"
+  },
+  {
+    "id": "b2fcb916-2b64-4495-9418-3c05a1c0486c",
+    "ts": "2025-09-03T07:36:28.037Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "fadbb334883caa29744eb73efa6961fb7b7d39254794db22e1f04870d496c1de",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "warning",
+        "code": "VIN_CHECK",
+        "message": "VIN check digit mismatch",
+        "details": [
+          "Expected X, got 5"
+        ],
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 34,
+    "action": "review"
+  },
+  {
+    "id": "e1f008cb-18dd-4f70-8980-a2496124c848",
+    "ts": "2025-09-03T07:36:31.109Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "fadbb334883caa29744eb73efa6961fb7b7d39254794db22e1f04870d496c1de",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "warning",
+        "code": "VIN_CHECK",
+        "message": "VIN check digit mismatch",
+        "details": [
+          "Expected X, got 5"
+        ],
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 34,
+    "action": "review"
+  },
+  {
+    "id": "ae5a994a-dd63-4d8f-91ab-c31adaa1d920",
+    "ts": "2025-09-03T07:36:33.860Z",
+    "ip": "::1",
+    "fingerprint": "fa835280-b61f-4f56-aa61-c8dec4254b7f",
+    "payloadHash": "fadbb334883caa29744eb73efa6961fb7b7d39254794db22e1f04870d496c1de",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "warning",
+        "code": "VIN_CHECK",
+        "message": "VIN check digit mismatch",
+        "details": [
+          "Expected X, got 5"
+        ],
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "IP_BURST",
+        "message": "High submission volume from this IP",
+        "weight": 12
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 34,
+    "action": "review"
   }
 ]
