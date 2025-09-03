@@ -9,6 +9,9 @@ interface ValidationResultsProps {
   //newly added for fraud detection
   riskScore?: number | null
   action?: 'allow' | 'review' | 'block' | null
+  //onApplySuggestion?: (field: string, suggestion: string) => void
+  //onApplyAll?: () => void
+  //onSubmitAnyway?: () => void
 }
 
 export const ValidationResults: React.FC<ValidationResultsProps> = ({ 
@@ -17,6 +20,7 @@ export const ValidationResults: React.FC<ValidationResultsProps> = ({
   vehicleData,
   riskScore,
   action
+  
 }) => {
   const [expandedResults, setExpandedResults] = useState<Set<number>>(new Set())
 
@@ -194,11 +198,29 @@ export const ValidationResults: React.FC<ValidationResultsProps> = ({
                         
                         <p className="text-gray-700 mb-2">{result.message}</p>
                         
+                        {/*
+                        {result.suggestion && (
+                        <div className="flex items-center gap-2 mb-2">
+                          <p className="text-sm text-gray-600 bg-white p-2 rounded border flex-1">
+                            💡 Suggested: {result.suggestion}
+                          </p>
+                          {onApplySuggestion && (
+                            <button
+                              onClick={() => onApplySuggestion(result.field!, result.suggestion!)}
+                              className="px-3 py-1 text-sm bg-blue-600 text-white rounded hover:bg-blue-700"
+                            >
+                              Apply
+                            </button>
+                          )}
+                        </div>
+                        )}*/}
+
                         {result.suggestion && (
                           <p className="text-sm text-gray-600 bg-white p-2 rounded border mb-2">
                             💡 {result.suggestion}
                           </p>
                         )}
+
 
                         {/* Expandable Details Section */}
                         {hasDetails && isExpanded && (
@@ -232,6 +254,26 @@ export const ValidationResults: React.FC<ValidationResultsProps> = ({
               )
             })}
           </div>
+
+          {/*<div className="mt-6 flex gap-3">
+          {onApplyAll && results.some(r => r.suggestion) && (
+            <button
+              onClick={onApplyAll}
+              className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+            >
+              Fix All
+            </button>
+          )}
+          {onSubmitAnyway && (
+            <button
+              onClick={onSubmitAnyway}
+              className="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
+            >
+              Submit Anyway (Review)
+            </button>
+          )}
+        </div>
+          */}
 
           {/* Overall Status */}
           <div className="mt-6 p-4 bg-gray-50 rounded-lg">

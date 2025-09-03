@@ -1504,5 +1504,292 @@
     ],
     "riskScore": 43,
     "action": "review"
+  },
+  {
+    "id": "643e2d2c-e9c5-4309-952f-c5a9c2a1e548",
+    "ts": "2025-09-03T06:14:02.936Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "4ae9ed34eb65c7c3bbc3c95a48fe8e8190776ee05aa63bc92a7161f5c117deb6",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "7c8612fc-5a7d-4ed5-b9be-72ce989a554c",
+    "ts": "2025-09-03T06:14:07.553Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "4ae9ed34eb65c7c3bbc3c95a48fe8e8190776ee05aa63bc92a7161f5c117deb6",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "c8f01e4a-0b19-42e9-9ee3-c6af6158e92d",
+    "ts": "2025-09-03T06:14:25.881Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "445f6bb003747ee12fabca6e9d0ff71e2a8b89fa968720153a04499824df2bd3",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "b76f8022-b37c-45a3-9e5e-330f7d84926a",
+    "ts": "2025-09-03T06:14:31.696Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "445f6bb003747ee12fabca6e9d0ff71e2a8b89fa968720153a04499824df2bd3",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "c2b2e956-6015-4681-91d3-c255a651bf71",
+    "ts": "2025-09-03T06:37:41.879Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "02454ee90c3af21204c10aedaca15c5e8ea358cd40ef28806fddc1ddcb96df9f",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "c3b2208a-076e-4bb0-99a7-a696c06c25a5",
+    "ts": "2025-09-03T06:41:36.118Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "6504f5bbd0672496c4e1dcc532cd2a32feb34445d89909bfb4a6c40726e0837f",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "8d1cf35c-a4c6-4270-83f4-67b66a86bf32",
+    "ts": "2025-09-03T06:41:42.884Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "bab21be596535567c5cbbb3435119fd5ebf3dcfe14c7d440e60ae62c65871728",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 13,
+    "action": "allow"
+  },
+  {
+    "id": "2a4c9673-fa60-448f-88d0-3b7834c6075f",
+    "ts": "2025-09-03T06:41:45.681Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "bab21be596535567c5cbbb3435119fd5ebf3dcfe14c7d440e60ae62c65871728",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 13,
+    "action": "allow"
+  },
+  {
+    "id": "233aad96-7667-470f-a15c-012b573faeed",
+    "ts": "2025-09-03T06:42:31.594Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "6504f5bbd0672496c4e1dcc532cd2a32feb34445d89909bfb4a6c40726e0837f",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "ea4f9fc9-86fe-4157-85fb-bea191ae8a4f",
+    "ts": "2025-09-03T06:42:37.815Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "d0f1742f90882e2cf6e7815200c2e6cfe06b9ad294a829c6f2a03996fb739c14",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "3abfabac-abf8-420b-ba62-d35d26c4643e",
+    "ts": "2025-09-03T06:42:40.046Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "bab21be596535567c5cbbb3435119fd5ebf3dcfe14c7d440e60ae62c65871728",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "d16cf9c7-4c8c-46cd-a948-6d170df7952b",
+    "ts": "2025-09-03T06:42:42.463Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "bab21be596535567c5cbbb3435119fd5ebf3dcfe14c7d440e60ae62c65871728",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "0703c69f-0a2d-4159-a486-3b69283f4782",
+    "ts": "2025-09-03T06:42:50.004Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "499aee1ac2a6917d075646f94d63abc5484633d4b9fa87e5ae8ea63ba0422812",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "975e23cd-f760-4639-ba78-cff7e16d6361",
+    "ts": "2025-09-03T06:42:51.230Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "7a1979c756e458b26ca5bb595d33b208fb6cb3f22a651eabda84197ac86da4dd",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "96cd2350-0c2d-4785-8e68-213a99994308",
+    "ts": "2025-09-03T06:42:53.926Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "37124e3f17a2df4ec01bc55df619da75f2a09762e3cfa50f91214e798ee3affa",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "ba687aa5-26c7-4f92-b2bf-0d8e66c2a6ca",
+    "ts": "2025-09-03T06:42:58.193Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "37124e3f17a2df4ec01bc55df619da75f2a09762e3cfa50f91214e798ee3affa",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "42ffd010-a206-477a-aeed-78b0640c3997",
+    "ts": "2025-09-03T06:43:00.742Z",
+    "ip": "::1",
+    "fingerprint": "dc70c62e-63e0-4c6f-99fb-42672b28bf08",
+    "payloadHash": "aaad0270f49d1337eb683deb1a88993b7449fda451df009ab90599c1358f086f",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 31,
+    "action": "review"
   }
 ]

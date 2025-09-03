@@ -58,6 +58,30 @@ function App() {
     return (crypto as any)?.randomUUID?.() ?? Math.random().toString(36).slice(2)
   }
 
+  // Apply one suggestion
+  /*const handleApplySuggestion = (field: string, suggestion: string) => {
+    setVehicleData(prev => ({ ...prev, [field]: suggestion }));
+  };
+
+  // Apply all
+  const handleApplyAllSuggestions = () => {
+    let newData = { ...vehicleData };
+    validationResults.forEach(r => {
+      if (r.suggestion) {
+        newData[r.field as keyof VehicleData] = r.suggestion;
+      }
+    });
+    setVehicleData(newData);
+  };
+
+  // Force review
+  const handleSubmitAnyway = () => {
+    // you can either just resubmit with current data,
+    // or add a special flag to tell backend "forceReview"
+    handleValidation(vehicleData);
+  };
+  */
+
   //semua ni dah edit dekat backend, TAPI JANGAN DELETE LAGI
   /*const validateVehicleData = (data: VehicleData): ValidationResult[] => {
     const results: ValidationResult[] = []
@@ -563,6 +587,9 @@ function App() {
                 //tambah baru untuk fraud detection
                 riskScore={riskScore}
                 action={action}
+                //onApplySuggestion={handleApplySuggestion}
+                //onApplyAll={handleApplyAllSuggestions}
+                //onSubmitAnyway={handleSubmitAnyway}
               />
             </div>
           </div>
