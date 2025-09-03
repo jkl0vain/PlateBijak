@@ -9,3 +9,4 @@ frontend/.env
 backend/VoiceInput/*.json 
 backend/ChatBot/.env
 
+dist/
