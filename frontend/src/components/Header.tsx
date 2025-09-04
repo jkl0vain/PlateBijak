@@ -34,7 +34,7 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onViewChange }) => 
               <span>Validation</span>
             </button>
             
-            <button
+            {/*<button
               onClick={() => onViewChange('dashboard')}
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-colors ${
                 currentView === 'dashboard'
@@ -44,7 +44,7 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onViewChange }) => 
             >
               <BarChart3 className="h-4 w-4" />
               <span>Dashboard</span>
-            </button>
+            </button>*/}
           </nav>
         </div>
       </div>

@@ -644,7 +644,7 @@ function App() {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    /*<div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <Header currentView={currentView} onViewChange={setCurrentView} />
       
       <main className="container mx-auto px-4 py-8">
@@ -681,10 +681,47 @@ function App() {
             </div>
           </div>
         ) : (
-          <Dashboard />
+         <Dashboard />
         )}
       </main>
-    </div>
+    </div>*/
+
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <Header currentView={currentView} onViewChange={setCurrentView} />
+    
+    <main className="container mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Smart Vehicle Data Validation
+          </h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Ensure accurate vehicle information for faster insurance processing with our AI-powered validation system
+          </p>
+        </div>
+        
+        <div className="grid lg:grid-cols-2 gap-8">
+          <VehicleForm 
+            onValidate={debouncedValidate} 
+            isValidating={isValidating}
+            initialData={vehicleData}
+            action={action}
+          />
+          
+          <ValidationResults 
+            results={validationResults}
+            isValidating={isValidating}
+            vehicleData={vehicleData}
+            riskScore={riskScore}
+            action={action}
+            onApplySuggestion={handleApplySuggestion}
+            onApplyAll={handleApplyAllSuggestions}
+          />
+        </div>
+      </div>
+    </main>
+  </div>
+
   )
 }
 
