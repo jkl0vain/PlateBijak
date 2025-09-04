@@ -4,7 +4,8 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 dotenv.config();
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const basePrompt = "You are PlateBijak AI assistant. Answer as concisely as possible.";
+
+
 
 // Keep a persistent chat session so the system prompt is always used
 let chatSession = null;
@@ -13,22 +14,26 @@ export async function getGeminiResponse(userMessage) {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
-    // Start a chat session if it doesn't exist
     if (!chatSession) {
       chatSession = model.startChat({
-        systemMessage: basePrompt,   // Instructions for AI
+        history: [
+          {
+            role: "user",
+            parts: [{ text: "You are PlateBijak AI assistant. Answer based on the prompt and correct" }],
+          },
+        ],
         generationConfig: { temperature: 0.7 },
       });
     }
 
-    // Send the user message to the existing session
     const result = await chatSession.sendMessage(userMessage);
-    return result.response.text();  // return AI response
+    return result.response.text();
   } catch (err) {
     console.error("Error in Gemini API call:", err);
-    return null; // fallback will handle
+    return null;
   }
 }
+
 
 // Rule-based fallback
 export function getChatbotResponse(userInput) {

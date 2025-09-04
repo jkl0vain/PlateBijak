@@ -11,13 +11,13 @@ router.post("/chatbot", async (req, res) => {
       return res.status(400).json({ error: "Invalid message format" });
     }
 
-    // Call Gemini first
-    let reply = await getGeminiResponse(userMessage);
+    // Rule-based response first
+    let reply = getChatbotResponse(userMessage);
 
-    // Fallback to rule-based if API fails
-    if (!reply) {
-      console.warn("Gemini reply failed, using fallback.");
-      reply = getChatbotResponse(userMessage);
+    // If rule-based returns the "not sure" line, then use Gemini
+    if (!reply || reply.includes("🤖 I’m not sure")) {
+      console.log("Rule-based unsure, asking Gemini...");
+      reply = await getGeminiResponse(userMessage);
     }
 
     res.json({ response: reply });
