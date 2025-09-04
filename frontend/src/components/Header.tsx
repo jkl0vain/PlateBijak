@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onViewChange }) => 
               <Shield className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">BJAK</h1>
+              <h1 className="text-xl font-bold text-gray-900">PlateBijak</h1>
               <p className="text-sm text-gray-500">Vehicle Validation System</p>
             </div>
           </div>
