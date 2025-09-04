@@ -10,12 +10,14 @@ interface VehicleFormProps {
   onValidate: (data: VehicleData) => void
   isValidating: boolean
   initialData: VehicleData
+  action?: 'allow' | 'review' | 'block' | null 
 }
 
 export const VehicleForm: React.FC<VehicleFormProps> = ({
   onValidate,
   isValidating,
-  initialData
+  initialData,
+  action
 }) => {
   const [formData, setFormData] = useState<VehicleData>(initialData)
   const [realTimeValidation, setRealTimeValidation] = useState(true)
@@ -31,7 +33,13 @@ export const VehicleForm: React.FC<VehicleFormProps> = ({
 
     if (realTimeValidation && value.length > 2) {
       if (debounceRef.current) window.clearTimeout(debounceRef.current)
-      debounceRef.current = window.setTimeout(() => onValidate(formData), 500)
+        const newData = { ...formData, [field]: value }
+      setFormData(newData)
+
+      if (realTimeValidation && value.length > 2) {
+        if (debounceRef.current) window.clearTimeout(debounceRef.current)
+        debounceRef.current = window.setTimeout(() => onValidate(newData), 500) // ✅ use newData
+      }
     }
   }
 
@@ -219,7 +227,11 @@ const MicButton = ({ field }: { field: keyof VehicleData }) => (
             <input
               type="text"
               value={formData.make}
-              onChange={(e) => handleInputChange("make", e.target.value)}
+              onChange={(e) => {
+                const newValue = e.target.value
+                handleInputChange("make", newValue)
+                onValidate({ ...formData, make: newValue })   // 👈 trigger validation
+              }}     
               placeholder="e.g., Toyota"
               className={`${inputClasses} pr-12`}
               required
@@ -311,8 +323,12 @@ const MicButton = ({ field }: { field: keyof VehicleData }) => (
 
         <button
           type="submit"
-          disabled={isValidating}
-          className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+          disabled={isValidating || action === 'block'}   // 🔒 disable if validating OR blocked
+          className={`w-full py-3 px-6 rounded-lg font-medium focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 flex items-center justify-center space-x-2
+            ${isValidating || action === 'block'
+              ? 'bg-gray-400 text-white cursor-not-allowed'
+              : 'bg-blue-600 text-white hover:bg-blue-700'
+            }`}
         >
           {isValidating ? (
             <>

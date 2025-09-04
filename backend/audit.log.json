@@ -2454,5 +2454,5911 @@
     ],
     "riskScore": 34,
     "action": "review"
+  },
+  {
+    "id": "835ba714-cd33-4164-8149-883bbfb8d3f6",
+    "ts": "2025-09-03T11:00:30.531Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "db2287d40c6322d6f49fa9692e165c109561e3a1947e33c501063a03b33598eb",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "012fc412-71a1-4586-bca8-c8a4a84abc02",
+    "ts": "2025-09-03T11:00:35.655Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9446ee96822376a7e971e735d7149a5b5499f4753c21660e21051eb433367e42",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "2b70dbe1-29a6-4a22-95a6-d04b1e8c359b",
+    "ts": "2025-09-03T11:00:37.135Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "1188fbd0f4b5b3530168225ad26aaa83fd158efcb44a89977f66d5d5bfcc9088",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "dd699cc2-65ff-4b85-a9e9-e0c45885730a",
+    "ts": "2025-09-03T11:00:41.583Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "1188fbd0f4b5b3530168225ad26aaa83fd158efcb44a89977f66d5d5bfcc9088",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "1381be03-f263-4c0b-b1f7-2db0febd3661",
+    "ts": "2025-09-03T11:01:00.336Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "1188fbd0f4b5b3530168225ad26aaa83fd158efcb44a89977f66d5d5bfcc9088",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "6c36b4bc-abc9-425c-884b-8fd6f9fd9128",
+    "ts": "2025-09-03T11:01:04.233Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "1188fbd0f4b5b3530168225ad26aaa83fd158efcb44a89977f66d5d5bfcc9088",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "2e485df8-1a19-4422-b378-3a7efd0a162c",
+    "ts": "2025-09-03T11:02:14.784Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "f44cb0a4-c3f0-48a2-b673-1d35c122670d",
+    "ts": "2025-09-03T11:02:16.834Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "8da51e3e-54d2-4021-b746-772a0396f980",
+    "ts": "2025-09-03T11:02:35.247Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "eb4188c9-476e-4bb9-8173-0a9660754729",
+    "ts": "2025-09-03T11:02:37.427Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "c1014ea7-cfce-45a8-a1a8-202f74104639",
+    "ts": "2025-09-03T11:02:45.117Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "d4595686-3feb-4802-95b8-87875f1a9fa6",
+    "ts": "2025-09-03T11:02:48.505Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 13,
+    "action": "allow"
+  },
+  {
+    "id": "2ce655b3-b1ab-456e-a294-de70fa5c5f98",
+    "ts": "2025-09-03T11:04:17.291Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "7a016446-7a47-4269-b638-ecb8a6a15223",
+    "ts": "2025-09-03T11:04:21.661Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "313335ce-3ec7-4f26-a756-740ff0251b1b",
+    "ts": "2025-09-03T11:04:47.163Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "db2287d40c6322d6f49fa9692e165c109561e3a1947e33c501063a03b33598eb",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 31,
+    "action": "review"
+  },
+  {
+    "id": "dfbd76c4-d2b1-4254-bbf1-91ac2900e3ff",
+    "ts": "2025-09-03T11:04:47.694Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "db2287d40c6322d6f49fa9692e165c109561e3a1947e33c501063a03b33598eb",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 31,
+    "action": "review"
+  },
+  {
+    "id": "d2c3f83a-d275-4d74-ac9e-953282726fbe",
+    "ts": "2025-09-03T11:04:52.305Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "db2287d40c6322d6f49fa9692e165c109561e3a1947e33c501063a03b33598eb",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 31,
+    "action": "review"
+  },
+  {
+    "id": "97cc8926-1b65-4e0e-b9c4-e2f5c7e5c6e1",
+    "ts": "2025-09-03T11:04:53.974Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "db2287d40c6322d6f49fa9692e165c109561e3a1947e33c501063a03b33598eb",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 31,
+    "action": "review"
+  },
+  {
+    "id": "0bff1392-22d7-40b4-8f52-11857c27c0d5",
+    "ts": "2025-09-03T11:04:56.615Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "93e45b6b-b0f7-4132-b8c9-4ce80121f7ab",
+    "ts": "2025-09-03T11:04:58.444Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "80a6ea60-a3c8-4e47-81ba-8904b199c193",
+    "ts": "2025-09-03T11:05:06.413Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49cf832a7a6dc7487bd5ab456c4cd2f37f8f01480b3fbee727c3c112e8355700",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 13,
+    "action": "allow"
+  },
+  {
+    "id": "5cd65d9a-bfb1-4027-92d1-2b5176076b83",
+    "ts": "2025-09-03T11:05:07.458Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49cf832a7a6dc7487bd5ab456c4cd2f37f8f01480b3fbee727c3c112e8355700",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 13,
+    "action": "allow"
+  },
+  {
+    "id": "35cf066d-9913-40ca-93f3-2ead0d34a94f",
+    "ts": "2025-09-03T11:05:09.004Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "30609b2f4ac7366d04c5f2ecf840eba4e2bf0ab5bb3859b6f4b41fda49753e67",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 13,
+    "action": "allow"
+  },
+  {
+    "id": "3602707a-189b-4da9-abb5-39ae6a97e5b6",
+    "ts": "2025-09-03T11:05:11.255Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 13,
+    "action": "allow"
+  },
+  {
+    "id": "71f5ef0e-643e-4af8-b037-5c38865e3317",
+    "ts": "2025-09-03T11:05:12.507Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "behavior",
+        "type": "warning",
+        "code": "DEVICE_BURST",
+        "message": "Many attempts from this device",
+        "weight": 10
+      }
+    ],
+    "riskScore": 13,
+    "action": "allow"
+  },
+  {
+    "id": "8b4dc6c1-c1bd-431e-93fd-425badb10c85",
+    "ts": "2025-09-04T01:14:44.627Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "33705c1d-cd08-4ff0-b0db-4d88fce0595b",
+    "ts": "2025-09-04T01:14:55.446Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "24f3b61c-ee62-4bba-8654-6548ac4938a1",
+    "ts": "2025-09-04T01:15:00.356Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "6d2597fe8dc40e0a6671fa1c24110c89c7c2564b131949884aac047c7c21ea51",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "5012e24d-5e74-4a40-be18-cb92710874f4",
+    "ts": "2025-09-04T01:15:00.945Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "6d2597fe8dc40e0a6671fa1c24110c89c7c2564b131949884aac047c7c21ea51",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "3cdcd5f7-6970-427a-80dc-f38d573bfc30",
+    "ts": "2025-09-04T01:15:14.590Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "130844d2d5468f8470a3136d8a697a8b6e2abe81641cb5ae1c5611a683a56b44",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "4675ac9a-0270-4ab6-a789-7113369316cb",
+    "ts": "2025-09-04T01:15:16.251Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e45e202ab214ab8a48d16f08cef8f61ea1505afa8b7c44e6657310a6731cee72",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "692b9734-631d-403f-8c0c-d2cfb518c2c1",
+    "ts": "2025-09-04T01:15:16.975Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e45e202ab214ab8a48d16f08cef8f61ea1505afa8b7c44e6657310a6731cee72",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "0f8ab1c2-af80-4c18-a218-a929cd5af595",
+    "ts": "2025-09-04T01:15:18.254Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "c73503b1-741e-4ed7-985f-e3073f8f9cc4",
+    "ts": "2025-09-04T01:15:20.846Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "ea998df3-7c13-48dd-b013-026f6ca31144",
+    "ts": "2025-09-04T01:15:27.017Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4bf6ea3a0a745d1160ecb3e79b4ca71687bb7241749b2cf9ce0df46f3412e799",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "e59043e1-e7e6-480f-a672-4c7e94928cc5",
+    "ts": "2025-09-04T01:15:27.775Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "247a8620d356795f3980fc63fe90eac4460095c34ce918c7d1fa0885003a04e0",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "646380c0-c840-4006-84cd-b9ac40bc6374",
+    "ts": "2025-09-04T01:15:29.786Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4bf6ea3a0a745d1160ecb3e79b4ca71687bb7241749b2cf9ce0df46f3412e799",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "8d38ad6f-49ae-42ad-b647-cd2e0a4fc809",
+    "ts": "2025-09-04T01:15:31.576Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4bf6ea3a0a745d1160ecb3e79b4ca71687bb7241749b2cf9ce0df46f3412e799",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "34d5d9ea-8d39-4c97-9f3e-f2c18e09fbea",
+    "ts": "2025-09-04T01:15:32.624Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4bf6ea3a0a745d1160ecb3e79b4ca71687bb7241749b2cf9ce0df46f3412e799",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "029e7c26-d2d6-4880-8d77-ddb6db2ee5d9",
+    "ts": "2025-09-04T01:15:34.488Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4bf6ea3a0a745d1160ecb3e79b4ca71687bb7241749b2cf9ce0df46f3412e799",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "ec268be3-3a85-4ed2-a52e-b3024a3bf67f",
+    "ts": "2025-09-04T01:15:40.842Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2109b51e6e2d7b7cd7ff927fb5995059cba779176a9827eec5634c13566f4e13",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "7226a178-d0f3-4f5d-a00d-ef3202f43301",
+    "ts": "2025-09-04T01:15:43.792Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2109b51e6e2d7b7cd7ff927fb5995059cba779176a9827eec5634c13566f4e13",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "8b78f7a8-4244-4219-a8ec-66383f1018f9",
+    "ts": "2025-09-04T01:16:12.277Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c570ed5f5ee90f0b48cadbea89f1cf2f049b6fcb7a8230242e2d1ddc72ea7385",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "a4ea685d-4e9f-46bd-93f4-0804925fcef6",
+    "ts": "2025-09-04T01:16:24.618Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "ab9f96e5cc992a2b824a9e20cb1761f6269a7a551052cb9fffc4085c0ed7754d",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "c8c88e23-f64b-4391-863b-e8f431835ddc",
+    "ts": "2025-09-04T01:16:26.690Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4447c6c9332e738ed4ed88e547a8050e20addfd9dabcbd4521ab984817f13183",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "warning",
+        "code": "CC_EXTREME",
+        "message": "Very unusual engine capacity",
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "ce7eea5e-9472-41af-84a1-3fbc2d28531e",
+    "ts": "2025-09-04T01:16:43.155Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2ed30c73aa87b2f15653a4d939e6be14678b7357a4bb4961d4a8d31bd9f75df3",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "warning",
+        "code": "CC_EXTREME",
+        "message": "Very unusual engine capacity",
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "58eb4bb2-1dde-4b84-a2c2-1c0113f4627b",
+    "ts": "2025-09-04T01:16:47.021Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2ed30c73aa87b2f15653a4d939e6be14678b7357a4bb4961d4a8d31bd9f75df3",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "warning",
+        "code": "CC_EXTREME",
+        "message": "Very unusual engine capacity",
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "0d0ea777-bb97-4b96-b125-a3ebfe1facd7",
+    "ts": "2025-09-04T01:19:58.198Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "a9e19c10-5472-48d7-887b-e3bbf0ce1e36",
+    "ts": "2025-09-04T01:20:00.678Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "bfa99750-7132-4a4c-b1a5-c85346d8b921",
+    "ts": "2025-09-04T01:20:07.439Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "bcd944c6-5dc7-4ba5-b4fa-25445214ee43",
+    "ts": "2025-09-04T01:20:10.706Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "074ada9b-6d2e-4d17-983b-516470fc4836",
+    "ts": "2025-09-04T01:25:25.905Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "82ea3957-14ce-4908-9b57-986e5f4e115a",
+    "ts": "2025-09-04T01:25:28.866Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "ceb83b3e-6f42-4909-ac47-82e8a2dfdfde",
+    "ts": "2025-09-04T01:25:34.445Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "ebdd7ffa1bc0f27e2be887f2a9e9ea5694fc9e41ad5dea146be6d45e2367d067",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "8b56534a-1845-4e5d-bbbd-73559fd8c200",
+    "ts": "2025-09-04T01:25:35.214Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49cf832a7a6dc7487bd5ab456c4cd2f37f8f01480b3fbee727c3c112e8355700",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "1ba13bd9-5f14-470b-a733-472f181a8a82",
+    "ts": "2025-09-04T01:25:35.792Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49cf832a7a6dc7487bd5ab456c4cd2f37f8f01480b3fbee727c3c112e8355700",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "209c12d1-c4c0-4c5a-b299-4bd901e48f9c",
+    "ts": "2025-09-04T01:25:36.992Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f12b4bc05cdff68ad60d4e498bb4a11e14343acfb907e7f24e6e6f5fea9986a4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "1fc91e25-a278-43cb-9104-7305fc555cab",
+    "ts": "2025-09-04T01:25:37.998Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b31bd59dc9f49dccd3f7f9812277f9633ed5f541be2f57559f661709cb98f2a2",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "afaa228a-3b72-4c10-966e-314969af1fdd",
+    "ts": "2025-09-04T01:25:41.114Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f12b4bc05cdff68ad60d4e498bb4a11e14343acfb907e7f24e6e6f5fea9986a4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "e5fc96ba-fa15-421a-8889-49c580a2e812",
+    "ts": "2025-09-04T01:25:42.283Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b31bd59dc9f49dccd3f7f9812277f9633ed5f541be2f57559f661709cb98f2a2",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "b4624bf6-2311-4ad7-82e9-acd9f0c1a6f2",
+    "ts": "2025-09-04T01:25:43.873Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f12b4bc05cdff68ad60d4e498bb4a11e14343acfb907e7f24e6e6f5fea9986a4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "c13700cb-e3ef-4601-bdc0-e8ecd0177401",
+    "ts": "2025-09-04T01:25:45.095Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "47d4444e177dfd718c2c4a1d8b20d9a3159b97b61f53e3cf00349727292f5b21",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "b4add0bf-b68b-4b5d-aae7-3193b383355e",
+    "ts": "2025-09-04T01:25:45.889Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f12b4bc05cdff68ad60d4e498bb4a11e14343acfb907e7f24e6e6f5fea9986a4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "9430ba38-2cf5-435c-85f6-7a000c3452e6",
+    "ts": "2025-09-04T01:25:47.472Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f12b4bc05cdff68ad60d4e498bb4a11e14343acfb907e7f24e6e6f5fea9986a4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "4fd625e6-f2f3-442d-9592-d5111957d328",
+    "ts": "2025-09-04T01:25:51.301Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e45e202ab214ab8a48d16f08cef8f61ea1505afa8b7c44e6657310a6731cee72",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "7c0fd9cd-a110-47fe-af2a-9024ebfa0181",
+    "ts": "2025-09-04T01:25:51.968Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e45e202ab214ab8a48d16f08cef8f61ea1505afa8b7c44e6657310a6731cee72",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "96791fec-dd2d-4a50-8f6f-5bd6b62b1d09",
+    "ts": "2025-09-04T01:25:52.981Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e45e202ab214ab8a48d16f08cef8f61ea1505afa8b7c44e6657310a6731cee72",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "366e493a-c7df-46c7-8155-c9d394419313",
+    "ts": "2025-09-04T01:25:54.393Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e45e202ab214ab8a48d16f08cef8f61ea1505afa8b7c44e6657310a6731cee72",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "772798e1-c6ba-41b3-94a9-028bc0394d0f",
+    "ts": "2025-09-04T01:25:55.701Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "8c8f585c-6721-45ae-be61-faa3fc97fe9d",
+    "ts": "2025-09-04T01:25:56.380Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49cf832a7a6dc7487bd5ab456c4cd2f37f8f01480b3fbee727c3c112e8355700",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "6eb0618c-c42b-42ac-8d6e-f29aa0e1f8c0",
+    "ts": "2025-09-04T01:25:58.196Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f12b4bc05cdff68ad60d4e498bb4a11e14343acfb907e7f24e6e6f5fea9986a4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "4e385017-0b4e-4d7f-b1bc-b8c7725eea60",
+    "ts": "2025-09-04T01:25:59.682Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f12b4bc05cdff68ad60d4e498bb4a11e14343acfb907e7f24e6e6f5fea9986a4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "171faef5-0c25-44ac-8124-0819548d8c0e",
+    "ts": "2025-09-04T01:26:01.024Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e45e202ab214ab8a48d16f08cef8f61ea1505afa8b7c44e6657310a6731cee72",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "345c51bf-4d44-45b9-ae72-97ff6720a08c",
+    "ts": "2025-09-04T01:26:02.180Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e45e202ab214ab8a48d16f08cef8f61ea1505afa8b7c44e6657310a6731cee72",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "51a4fd26-38e2-4f85-8df0-928736cec612",
+    "ts": "2025-09-04T01:26:03.363Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49cf832a7a6dc7487bd5ab456c4cd2f37f8f01480b3fbee727c3c112e8355700",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "9dfefdf7-2880-4ef0-ae80-12d7a92ae6f1",
+    "ts": "2025-09-04T01:26:05.474Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "1135be64-0df0-4c38-b2d5-e700c1b97b85",
+    "ts": "2025-09-04T01:26:10.760Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "46030993-4d84-49a3-b0b7-dd033cdad205",
+    "ts": "2025-09-04T01:26:11.374Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "41c22979bdf7fda6f63a479cb458b3c79064ffc606d5f2e2bfae50032e7f21f6",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "d930d64b-dc04-4720-9f5e-5a34f04b201c",
+    "ts": "2025-09-04T01:26:12.174Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "41c22979bdf7fda6f63a479cb458b3c79064ffc606d5f2e2bfae50032e7f21f6",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "9abb1897-58d3-4d31-8209-cb55ad9531d8",
+    "ts": "2025-09-04T01:26:13.514Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "01fd77f3-5fb8-44f0-a366-bf1defa034ca",
+    "ts": "2025-09-04T01:26:33.556Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49f76a43e2c4d2a2f7eb54b1eb59e17b1e5d889135185785206247d44e00c95b",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "chassisNumber",
+        "type": "warning",
+        "code": "VIN_CHECK",
+        "message": "VIN check digit mismatch",
+        "details": [
+          "Expected 8, got 9"
+        ],
+        "weight": 12
+      }
+    ],
+    "riskScore": 15,
+    "action": "allow"
+  },
+  {
+    "id": "fa48dcf1-da49-4ba1-b981-352ba6fd8433",
+    "ts": "2025-09-04T01:41:14.752Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "110e63e84f817dc3bb60d5da4c9287a9e9f23a1c13d9585c73345ebefb1f4a59",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "707da1f2-767a-48ca-b938-18a5ad8f16a4",
+    "ts": "2025-09-04T01:41:20.538Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "63cc9469dc03b50017902b66539eb9c0581623bec8e0275eca96be4a2ee4c196",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "fb6d85c3-9d2e-43a0-ae86-671a18301437",
+    "ts": "2025-09-04T01:41:21.248Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c1ce8aebbb5c3038f0335142479fa9b960dd9cfe9ac87ff9a1d4d1a67c59ac57",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "7342f29d-f02b-4e66-befd-d98725b79358",
+    "ts": "2025-09-04T01:41:22.957Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4e540205f423b51e526209ec3ea9542239c4103aa696ef1f050bc051b49d4684",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "d5184238-2b1f-4b08-af37-58d065a46167",
+    "ts": "2025-09-04T01:41:25.502Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c1ce8aebbb5c3038f0335142479fa9b960dd9cfe9ac87ff9a1d4d1a67c59ac57",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "7c3562c2-d70c-431c-aeac-7d69598b0c25",
+    "ts": "2025-09-04T01:41:27.698Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c1ce8aebbb5c3038f0335142479fa9b960dd9cfe9ac87ff9a1d4d1a67c59ac57",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "2416f4d5-61d1-491b-8d52-3a53ace21f7c",
+    "ts": "2025-09-04T01:41:30.317Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "94fc0f98850f217ac3db341dbf10d9c239db586684a6d328c7c7bd5f0e874cae",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "92184ff7-5a50-40cb-a064-b989f2bf0657",
+    "ts": "2025-09-04T01:41:31.796Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "94fc0f98850f217ac3db341dbf10d9c239db586684a6d328c7c7bd5f0e874cae",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "6a8869c7-08b5-4ede-93fc-e30b310bc8da",
+    "ts": "2025-09-04T01:41:34.119Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "94fc0f98850f217ac3db341dbf10d9c239db586684a6d328c7c7bd5f0e874cae",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "e8dbc8a0-97a6-4112-bf2e-3ff5e397573d",
+    "ts": "2025-09-04T01:41:36.651Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "94fc0f98850f217ac3db341dbf10d9c239db586684a6d328c7c7bd5f0e874cae",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "8dd58f45-05b5-49c8-99d1-f03e7204a301",
+    "ts": "2025-09-04T01:41:38.861Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "647500beff44f2dc4b403c2ddbd114f46f4fc7b0256a5c3d73c07bb1a31f684c",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "3f23fd1f-d26b-47fd-a52d-a46c5c522e5c",
+    "ts": "2025-09-04T01:41:40.271Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "647500beff44f2dc4b403c2ddbd114f46f4fc7b0256a5c3d73c07bb1a31f684c",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "2f0ee52b-08bb-43f4-952c-d25ef26a0068",
+    "ts": "2025-09-04T01:41:41.935Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "15049831d26c3540436144e097628f66ca873ab1ad2d6b8c932de91b39ace731",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "ec580b6f-1bfa-4866-9509-53bb196f2870",
+    "ts": "2025-09-04T01:41:43.169Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "15049831d26c3540436144e097628f66ca873ab1ad2d6b8c932de91b39ace731",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "3e572373-9b03-4ea1-9ef7-1f26749b2e35",
+    "ts": "2025-09-04T01:41:43.914Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "6c38b481d7c9f5283d6d0a36df98294f4ce2ef783fde82fa8590fb328134cb56",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "5f667fd8-70b8-4f37-8880-6d05e1cfac54",
+    "ts": "2025-09-04T02:06:48.205Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "8f70c044-a111-4605-b647-749b9d74e5e7",
+    "ts": "2025-09-04T02:06:51.607Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "889a1a8007a330f1b74f9a4decc4d3a426dc511de459b7e88e2091c326a874da",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "6d1ae1cd-a7d8-449c-90b2-f1483b72c781",
+    "ts": "2025-09-04T02:06:53.010Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "7e25f8fe-81c5-4a0d-bfe2-23964ad6c259",
+    "ts": "2025-09-04T02:06:53.523Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "a181d6b7-49e2-4ebc-9ff2-5616b8e3d711",
+    "ts": "2025-09-04T02:06:56.945Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "54e9b00004f364940aa5d3464137a6793ec38254e6d625ef2372c95256cc5cdb",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "fac23d67-78c2-4b8a-9832-cc820325a902",
+    "ts": "2025-09-04T02:07:01.128Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "914df85ad87f670db0e06759c4e2e640523f55fab034bda8eaafbf6032208ab9",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "e41711d2-b07d-4457-b8b2-5d52a5690710",
+    "ts": "2025-09-04T02:07:03.073Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "8c81d77202b29cefe1b54dd3a11aae3d1ea7e29ea61d3bc1fd710f7c0fa844dd",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "0b921c3a-b089-4d5f-a57e-9ec3d7981b53",
+    "ts": "2025-09-04T02:07:05.280Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7aa443f45748cbabfb40a237c5d81ecf51658d57966af5edb18a25d5f11807a4",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "dc248a60-2ebc-43a8-89c5-15b173dae759",
+    "ts": "2025-09-04T02:07:09.322Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7de45a0d7f0b1c177a10a9aa40e33f190e4a1bdbc4ba5c42ae594ce1251ca821",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "88dc719a-93bd-4cad-9ab0-e1f0adf5f487",
+    "ts": "2025-09-04T02:07:14.627Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "bbcb4cbc3d77c9418cf8278793b0a6d83b935e1900d090d4ab6786e7a80c5f48",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "19c80808-39c1-472d-a489-cd20dc7f2044",
+    "ts": "2025-09-04T02:07:32.286Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "19e235667bd6daee6c25c5061ddd73f04817bf090bc46472c29c9fff2cc3363e",
+    "findings": [
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camr\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 49,
+    "action": "review"
+  },
+  {
+    "id": "f26a0725-706d-4497-89f7-900a0d15868b",
+    "ts": "2025-09-04T02:07:33.826Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "ca2258927f45eab3154c16ef0853cf45499f9c651f81f7344ab235432dc2a33e",
+    "findings": [
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camre\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 49,
+    "action": "review"
+  },
+  {
+    "id": "f7a5941e-ad94-44d3-be80-7218364c3409",
+    "ts": "2025-09-04T02:54:46.981Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "da0a89fe50de34b07a75dbd3d5a194bf7f95a66e2c5cd8339e28449a246299ce",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "f314604f-780e-4b9e-9ad2-466d798a104f",
+    "ts": "2025-09-04T02:54:47.886Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "c5bcf1f6-cd1a-426c-9f00-78ec0848821e",
+    "ts": "2025-09-04T02:55:08.349Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "b592ccd0-297b-4ed9-ad76-c44a4bc23afe",
+    "ts": "2025-09-04T02:55:13.088Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "53717e56-40ce-44f6-bd95-9cb650101b4a",
+    "ts": "2025-09-04T02:55:18.049Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49cf832a7a6dc7487bd5ab456c4cd2f37f8f01480b3fbee727c3c112e8355700",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "038d2beb-df9e-4ada-937c-3cca62727a63",
+    "ts": "2025-09-04T02:55:18.901Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "99f80dcd-a0e8-445d-9b39-9c0333eb5b30",
+    "ts": "2025-09-04T02:55:19.402Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "8361aa60-0b0f-4546-89bf-bcfc7daeddbc",
+    "ts": "2025-09-04T02:55:21.581Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d58fbb407201887264af462d2ad77bd4b930eb519b6689b015d354d74f35373d",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "c6357b6f-301b-4bb6-9b8e-9b01b3ccb9bf",
+    "ts": "2025-09-04T02:55:36.300Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7b8b756d35ded48df4a9d7dbfb96203b533a876c2a6dac596c61db27803cb9d0",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "97f6d1ec-0f3d-469f-9219-68bcf364c593",
+    "ts": "2025-09-04T02:58:38.171Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "f09db650-306d-4af9-852c-166ff82a38f6",
+    "ts": "2025-09-04T02:58:41.531Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "5b78227b-ce26-4196-8124-9db5f7034e26",
+    "ts": "2025-09-04T02:58:42.033Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "afa777e5-7bea-48ec-aec5-d98bed92679d",
+    "ts": "2025-09-04T02:58:44.060Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "5116a5ed-19bc-4a63-9063-8db345b18712",
+    "ts": "2025-09-04T02:58:44.569Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "4e1657a3-2f82-402d-ae81-32bc0c62489d",
+    "ts": "2025-09-04T02:58:45.740Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "cdd57df6-1f6f-44b1-8f67-f1b54aca64ef",
+    "ts": "2025-09-04T02:59:04.148Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "b5003d4d-3d53-4a5d-abd1-c120931b1d0c",
+    "ts": "2025-09-04T02:59:05.813Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4628649e9513aee059d965b048f631ea7dfd6362b5ccad33bbbee6247465e27c",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "b50ca775-03ee-439d-b9d0-e3912a19b11a",
+    "ts": "2025-09-04T02:59:06.711Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "3f464b8ab3e56937abe0b56fe779fa21ba8b74110740a092c7ae600980b40a4a",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "77598716-e5c2-4100-978d-916f79ecf9ee",
+    "ts": "2025-09-04T02:59:07.886Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "c2da6541-b7b3-405c-aca6-4070ba7ab140",
+    "ts": "2025-09-04T02:59:08.388Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "980bed8f-9d6e-46be-8a6b-6e38f72adbad",
+    "ts": "2025-09-04T03:01:09.161Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b73bdd54ee9b30298d5e05cd607b7789b907c0ec8e9285fa0115ff7ee91f7df6",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "79b67fff-b797-4d44-a5e8-bd24952bf99f",
+    "ts": "2025-09-04T03:01:26.750Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "da0a89fe50de34b07a75dbd3d5a194bf7f95a66e2c5cd8339e28449a246299ce",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "b037e88a-911c-4bc9-a507-af0a3887b728",
+    "ts": "2025-09-04T03:01:27.618Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "65c12d0d-f63b-4f9e-88da-7cca316743d6",
+    "ts": "2025-09-04T03:01:32.072Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "75e6ab0c-91cf-41ea-b00e-3b17c49a76f3",
+    "ts": "2025-09-04T03:01:32.575Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "92a6c345-9de1-4871-b424-214d9332cc76",
+    "ts": "2025-09-04T03:05:09.551Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "7e38870c-be83-4c2e-93f3-d168261497a8",
+    "ts": "2025-09-04T03:05:11.528Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4628649e9513aee059d965b048f631ea7dfd6362b5ccad33bbbee6247465e27c",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "800f5d5b-463b-43b2-aa66-fd196353c5a2",
+    "ts": "2025-09-04T03:05:12.861Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "4ad0b1ca-d08a-4602-ba10-5ce4a55bf93f",
+    "ts": "2025-09-04T03:05:14.380Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "0e988a75-e8a8-492b-a5bf-46cc7bf3d90f",
+    "ts": "2025-09-04T03:05:21.663Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "a0401fb0ab62167be734cb573ba44f80019cc907d0572f2c2557227e7041f108",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "5b795162-0361-4b54-ad8b-b0c4d13c1fcd",
+    "ts": "2025-09-04T03:05:26.395Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4657ca5815eee01f8397640c5fbaae3f508c4ff27aec7081be03d413f5e548e8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "4fe8e096-8e87-4c6c-bb65-67bf826a4115",
+    "ts": "2025-09-04T03:05:30.492Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b8c5d025728ccb89aa9d67b6b80bfb8d2077bf884401d6dc97ecfb642192b4f5",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "f85cd056-bf5e-4a77-80c0-5d7b2349c20b",
+    "ts": "2025-09-04T03:05:31.053Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b8c5d025728ccb89aa9d67b6b80bfb8d2077bf884401d6dc97ecfb642192b4f5",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "f81a6a16-87d5-4ded-88d3-ba4f4e3a281d",
+    "ts": "2025-09-04T03:05:31.645Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b8c5d025728ccb89aa9d67b6b80bfb8d2077bf884401d6dc97ecfb642192b4f5",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "6ee80047-93b0-40c8-972a-1a1dd4c7106b",
+    "ts": "2025-09-04T03:05:48.963Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "f3925a60-1248-4997-a68b-b9b29faa6004",
+    "ts": "2025-09-04T03:05:53.150Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9f6d9a9f0b26a4b813f7fa5fd6d3dc3bc49e0e9d18468ec862abedfeaf066c28",
+    "findings": [
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camera\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 28,
+    "action": "allow"
+  },
+  {
+    "id": "afc0483c-7a36-4411-a6fe-5464a55cbd88",
+    "ts": "2025-09-04T03:06:32.940Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "332c9e32593f29427c5f4add7b50fac7e014cf10237fbed831c2afe8e25422a7",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camera\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 49,
+    "action": "review"
+  },
+  {
+    "id": "19bb12aa-4cd9-45b0-b1b2-ca10fbe65d9f",
+    "ts": "2025-09-04T03:09:48.174Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9446ee96822376a7e971e735d7149a5b5499f4753c21660e21051eb433367e42",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "1ca66a23-3d54-45d4-9b3a-6f113949be63",
+    "ts": "2025-09-04T03:10:16.046Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c84bb9af8a0cf4563fd1773c76b233d48787f9e1ca9f51ab309d7fabf6d4d8d9",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "b78ea77d-5265-41e6-b0da-355037ba541a",
+    "ts": "2025-09-04T03:10:22.723Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "526126c346ce3df42f3b67618838e5abee32009f2cd13bdbc70d8ad648a75852",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camera\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 49,
+    "action": "review"
+  },
+  {
+    "id": "61558db6-1ba7-446f-892c-d0051bc20216",
+    "ts": "2025-09-04T03:10:23.224Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "526126c346ce3df42f3b67618838e5abee32009f2cd13bdbc70d8ad648a75852",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camera\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 49,
+    "action": "review"
+  },
+  {
+    "id": "09b8ca37-3730-43fd-9fc4-e4e540c0c98b",
+    "ts": "2025-09-04T03:13:10.165Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "21e6a37327f0ca7cdbf48ddd4f29df78f43d9cfe1631622b239ece4aefc98dd0",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camera\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 49,
+    "action": "review"
+  },
+  {
+    "id": "9caee9a1-b4cc-4914-a68c-89c31e6a9ad5",
+    "ts": "2025-09-04T03:13:11.457Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4af51d7865699b0669604429b05870a45e9242cda420cefc662715d4cfd1251e",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camera\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 49,
+    "action": "review"
+  },
+  {
+    "id": "abb14d9f-487e-4058-81e6-978b933f63d3",
+    "ts": "2025-09-04T03:31:55.289Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "2e409cb2-4525-4561-bf47-56d52fcfce97",
+    "ts": "2025-09-04T03:31:59.163Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e01ce43bbbcd41e93e3f4dfb5218335c41d3c5339ef11726f0fc6e8cc6d406e4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "ad9516a0-a2a5-440e-a584-9c4882f1f04e",
+    "ts": "2025-09-04T03:31:59.664Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e01ce43bbbcd41e93e3f4dfb5218335c41d3c5339ef11726f0fc6e8cc6d406e4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "c28b0fcd-bf94-4158-a0d8-20e7f686f1ac",
+    "ts": "2025-09-04T03:32:02.687Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "4537ceeb-370d-4e53-a203-0aa4cfd78bd3",
+    "ts": "2025-09-04T03:32:07.548Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9f6d9a9f0b26a4b813f7fa5fd6d3dc3bc49e0e9d18468ec862abedfeaf066c28",
+    "findings": [
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Camera\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 28,
+    "action": "allow"
+  },
+  {
+    "id": "297a3287-ff10-4b32-9d27-abc29ad0cca6",
+    "ts": "2025-09-04T03:44:33.424Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "541825b7-d01d-4ac4-8497-a0e53ce5c815",
+    "ts": "2025-09-04T03:44:39.937Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "7b3dd179-b122-401c-88ea-1e8615d22e0a",
+    "ts": "2025-09-04T03:44:41.150Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "07629a3f-561d-40fa-813d-aa7df34c2e12",
+    "ts": "2025-09-04T03:44:45.370Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9f6d9a9f0b26a4b813f7fa5fd6d3dc3bc49e0e9d18468ec862abedfeaf066c28",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Camera\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "365d537f-5dcd-4e88-ae9d-c3dba84a1ef2",
+    "ts": "2025-09-04T03:44:46.613Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "54e9b00004f364940aa5d3464137a6793ec38254e6d625ef2372c95256cc5cdb",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "a2c6f3a4-0197-4bd6-9ec4-02cb4daadab3",
+    "ts": "2025-09-04T03:44:53.368Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f61ed1566b4c4c8b1b1a8ca90ccf7f92fe9009919455bb48823480c9ac0f4d58",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "fb4e751a-f20e-4b5d-b4ac-f864a7a06ccd",
+    "ts": "2025-09-04T03:44:54.176Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "8428f496dfc98c74c8d7c84b98e4acecae06ccfd3f34c890ec0c2cbb2a5dd03a",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "b0e5dbd3-729e-4724-97fd-c0f8af260ff4",
+    "ts": "2025-09-04T03:44:59.007Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c90d1f2ae24932060befa0661e8ea8becfbe67c3e48e690372333d6283a5a119",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "8f07552d-3b00-4654-a3db-4bf7e2c41360",
+    "ts": "2025-09-04T03:45:07.339Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7f7e15812d8630b14c49d32c624404228760f3904307f841fe861a5e17566ec2",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "warning",
+        "code": "CC_EXTREME",
+        "message": "Very unusual engine capacity",
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "09fb4a6c-8928-454e-b0b7-593e7a343939",
+    "ts": "2025-09-04T03:45:09.059Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "492274e60117254063c9ea2ac7f9e869a43b970bb532aa2e0d21634acf31174f",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "error",
+        "code": "CC_INVALID",
+        "message": "Engine capacity must be a positive number",
+        "weight": 10
+      }
+    ],
+    "riskScore": 14,
+    "action": "allow"
+  },
+  {
+    "id": "6a045cef-270c-424e-9043-28026e5a4423",
+    "ts": "2025-09-04T03:45:09.921Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f6ad1c693f998bc89a2459a5300d3773d714beca68e4bffd2792dda1ed1616ae",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "error",
+        "code": "CC_INVALID",
+        "message": "Engine capacity must be a positive number",
+        "weight": 10
+      }
+    ],
+    "riskScore": 14,
+    "action": "allow"
+  },
+  {
+    "id": "199fa1b4-0d77-469d-8405-5269cf304f38",
+    "ts": "2025-09-04T03:45:15.572Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "581bd7a450e7ce812fe6411dc654be87bb63ed7367431beaef560ff669db10aa",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "error",
+        "code": "CC_INVALID",
+        "message": "Engine capacity must be a positive number",
+        "weight": 10
+      }
+    ],
+    "riskScore": 14,
+    "action": "allow"
+  },
+  {
+    "id": "79e38097-27d5-48db-ad2c-469499a5c4e3",
+    "ts": "2025-09-04T03:45:19.173Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b612748aaca6182db538159571766c7756c76cccca3c1e007e21a46439cdb9eb",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "1716ba22-d9fd-4f5c-a55e-321c0fa20bce",
+    "ts": "2025-09-04T03:45:25.546Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "bbdd399c85b91b8e7f28e45d250e1ddd2f7d0993bd2fbf8d173afb28daeb17e6",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "6f78c132-196a-4dd4-8908-5b9ccc9a460b",
+    "ts": "2025-09-04T03:45:26.408Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "927a5dc3d6cd067225fef36205f1e38a9879b90935fb03fac647ff9cc69b88df",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "81b062ed-c5d6-4106-9d4e-be464ce14ddf",
+    "ts": "2025-09-04T03:48:14.313Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "923f4153-5f49-4db4-9755-d77f58f77bd0",
+    "ts": "2025-09-04T03:48:16.181Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "8b4c8d2a8662bbdf9e94e46c894c9711789adda2d9f266d938d1c9d14bddf249",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "ad62d367-c6c5-440a-9bb8-eca1e98cae65",
+    "ts": "2025-09-04T03:48:16.683Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "8b4c8d2a8662bbdf9e94e46c894c9711789adda2d9f266d938d1c9d14bddf249",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "187a159f-9c09-4400-abe5-bf723beab5a5",
+    "ts": "2025-09-04T03:48:17.907Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7b8b756d35ded48df4a9d7dbfb96203b533a876c2a6dac596c61db27803cb9d0",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "ff4d1345-7c60-4828-8f32-4795098fc52a",
+    "ts": "2025-09-04T03:48:18.612Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7b8b756d35ded48df4a9d7dbfb96203b533a876c2a6dac596c61db27803cb9d0",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "3b9d1625-a9d7-43f9-b994-95aa376d4f6f",
+    "ts": "2025-09-04T03:48:48.014Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "c84a6380-de88-4e50-977f-c4b8e4d2a5c3",
+    "ts": "2025-09-04T03:48:51.227Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e65407522ac98fe901116e8bee0955d25e85e927129413954a5228a940200b54",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "9ca93bb8-8f43-45e1-b194-70f45a609939",
+    "ts": "2025-09-04T03:48:55.594Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "49cf832a7a6dc7487bd5ab456c4cd2f37f8f01480b3fbee727c3c112e8355700",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "5dda4f31-e803-4e3d-ade9-781360d077a8",
+    "ts": "2025-09-04T03:48:56.456Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "82b8b8fe-f139-42ca-b0df-ae5fa2fcd487",
+    "ts": "2025-09-04T03:49:00.954Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "365cd5d3f0eaeca8d807b7a6fb42d5cd0328bd065bbb3f0a2002ec94c100f48a",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Camer\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "2d350f8e-0f84-4869-9469-c7b1dd8a239c",
+    "ts": "2025-09-04T03:49:02.425Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "54e9b00004f364940aa5d3464137a6793ec38254e6d625ef2372c95256cc5cdb",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "01877965-3066-4e81-a059-5f7a8930fcb2",
+    "ts": "2025-09-04T03:49:06.976Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f61ed1566b4c4c8b1b1a8ca90ccf7f92fe9009919455bb48823480c9ac0f4d58",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "79313294-3919-47af-9ffa-2a0aef71541b",
+    "ts": "2025-09-04T03:49:07.561Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "bfe59a68de2f93862a4ef037d7c94e21e9980ad59ca554d7d54e60caa8c34fe9",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "09cd89af-718f-4303-bc16-5cee7d337a17",
+    "ts": "2025-09-04T03:49:10.839Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "eacd38600f2096f14b706a6215d18eec6d723230f00f40fc6cab3a9c75ae4f08",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "58a6ec9b-97a7-42de-99f6-4741934b99b0",
+    "ts": "2025-09-04T03:49:14.586Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "71e874a73007418ec77e0dbf251f5951e6d2e6263f83a697eb7040f171428f69",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"Whi\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "b94632e0-2a17-43e8-a982-07691e2a2076",
+    "ts": "2025-09-04T03:49:15.606Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "6c7e6a1ae196907ee9abc199ec9d8be2bd5ad3e2ded912f82c02dd007c56e399",
+    "findings": [
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Did you mean \"White\"?\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 2,
+    "action": "allow"
+  },
+  {
+    "id": "4c5d8380-5fb0-450d-aec4-450d2a8d0f12",
+    "ts": "2025-09-04T04:28:54.084Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "3d52c80f-042c-4553-a80f-aa79e298ab3a",
+    "ts": "2025-09-04T04:28:55.785Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "86020d9226289e0949cad730593521849a267fde7c7bedce20631e19b20c39eb",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "6d6ff590-f134-423b-836a-3a8755411760",
+    "ts": "2025-09-04T04:28:57.269Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "3f464b8ab3e56937abe0b56fe779fa21ba8b74110740a092c7ae600980b40a4a",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "420e5013-fbdf-4fcd-9888-f9fa06fd7f9e",
+    "ts": "2025-09-04T04:28:58.836Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "1e89996f-e8ff-4324-b4b8-86c31bebfde1",
+    "ts": "2025-09-04T04:28:59.345Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "abd29fbd-10e7-4124-910a-3dde1a42c12e",
+    "ts": "2025-09-04T04:29:01.931Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "363a45930eb376908775519446dd6fa7f58c8196d1de05f6bc16576f8419994b",
+    "findings": [
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Ca,m\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 28,
+    "action": "allow"
+  },
+  {
+    "id": "8461ee78-c07e-4baa-8fa4-9c9da4ada75c",
+    "ts": "2025-09-04T04:29:03.769Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "19619e39f11886284e44e6c79e554f104b7cbf6a147365a651a3b91571d4d539",
+    "findings": [
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Ca,mer\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 28,
+    "action": "allow"
+  },
+  {
+    "id": "040cfe3e-bb0c-4250-a99f-622fe6b00e05",
+    "ts": "2025-09-04T04:29:07.118Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "12d355bf3e7b64593707fc21a2af20a85a38c8712f227c9956ba992fbc623d8c",
+    "findings": [
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Ca,\" does not belong to make \"Toyota\"",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 20
+      }
+    ],
+    "riskScore": 28,
+    "action": "allow"
+  },
+  {
+    "id": "7f1df33c-ef3e-42d7-8585-bac9acec3cdf",
+    "ts": "2025-09-04T04:29:08.422Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "fe8106b049948a8ada36fbc8e88cf2e2efd501c5d498dfe0a8578e552734c660",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Ca,r\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "7a37c364-f663-49c9-88a0-5a582db27983",
+    "ts": "2025-09-04T04:29:10.636Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "54e9b00004f364940aa5d3464137a6793ec38254e6d625ef2372c95256cc5cdb",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "992f4c9d-8663-4937-87d8-aa795d5b9bca",
+    "ts": "2025-09-04T04:29:15.180Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f61ed1566b4c4c8b1b1a8ca90ccf7f92fe9009919455bb48823480c9ac0f4d58",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "7cf136a0-dd06-4f49-9fb4-c70176b9043f",
+    "ts": "2025-09-04T04:29:23.608Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9e9a5bfca26900222f8c6d8326d4090ab9825e47d795dd7ec9100ea02974d53f",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "66f5426c-f5ae-4c50-ab39-7544e508c6e4",
+    "ts": "2025-09-04T04:29:31.065Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "862adec2de1292eaf7ece7546622b1bb61229f2dc7104fd5187b8e6336c2e17d",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "warning",
+        "code": "CC_EXTREME",
+        "message": "Very unusual engine capacity",
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "7c88932d-7561-4b7f-bad7-2a4b2cc9f8bd",
+    "ts": "2025-09-04T04:29:32.490Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "36009e0bc0105e2f3f43a991f786000758bf1bb6bc52fba0129ed05117b43348",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "error",
+        "code": "CC_INVALID",
+        "message": "Engine capacity must be a positive number",
+        "weight": 10
+      }
+    ],
+    "riskScore": 14,
+    "action": "allow"
+  },
+  {
+    "id": "a0cee58f-d551-46ab-b3eb-fab91c00815a",
+    "ts": "2025-09-04T04:29:40.507Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f008660b4c59f090f2539153cb0ceee402650aee22bbda2644e31526fbcd2cff",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "cdfcc2d7-4886-4f70-b45d-a8865c65725b",
+    "ts": "2025-09-04T04:29:42.654Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f008660b4c59f090f2539153cb0ceee402650aee22bbda2644e31526fbcd2cff",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "4dc54c41-054b-4b47-9b73-9f31156ca267",
+    "ts": "2025-09-04T04:29:47.049Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "bada5549fa535e589fe694db80c9b8be5abbddea58e92152a07cc42f7d12bfa5",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"Whir\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "0ad50747-3ef8-496f-b1ee-e11d846fba01",
+    "ts": "2025-09-04T04:29:48.197Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "76922355a2c8d16bd8bd6324ce3ad0b80e10f9993f355449bdbf545a498614e8",
+    "findings": [
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Did you mean \"White\"?\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 2,
+    "action": "allow"
+  },
+  {
+    "id": "dbd9b9c5-79a4-47b4-8318-4cf49270918a",
+    "ts": "2025-09-04T04:42:16.124Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "98759edf9f32c72ecdae151092d74fe67802a5cb55cf7513d1c5536eb8a74904",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"WHit\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "1a6cb546-880a-4f31-8311-ceebd1e7bc9d",
+    "ts": "2025-09-04T04:42:16.732Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9413e4fead2b7984b0ea9cde7df0c8dc445166a33f7e8ae976da307a19566fb4",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"WHite\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "73de2188-f3da-4a0d-b97d-3f6d11e4844a",
+    "ts": "2025-09-04T04:42:17.501Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "5146dd1f2f55ed710e493258a89121ac90f3844acd0853e0be28bf3aef7e62cf",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"WHi\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "0e2b344f-3d5e-4957-995c-ae11f4c6c7a5",
+    "ts": "2025-09-04T04:42:19.303Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "59dd7a10ec96ec866140c9c99c0d23baf041c1320ed295a10c663a9339c32e97",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "814ebcf7-68ac-4fd6-be0d-4beb0c63a0fe",
+    "ts": "2025-09-04T04:42:25.688Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "77f68f677bd4f1a5875b9293f60790a01357de3775764df6838661a026c82538",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"Whi\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "27ae18af-68d4-49bb-b713-00850ef99606",
+    "ts": "2025-09-04T04:43:05.898Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e28f6d16e224e26bfa37e82120ff19fdc7269479c67ec6c239001a549cc2bbc",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"whit\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "2b981e77-2a60-49ef-a402-addbc0cf2b41",
+    "ts": "2025-09-04T04:44:23.295Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "3fa9c5db2f57b1bce29e759f1303b787e32929a58ddb3538151af245d29fa39b",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"Whit\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "689a6bab-d3cd-4cbc-8b0d-ded046345779",
+    "ts": "2025-09-04T04:44:24.958Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "59dd7a10ec96ec866140c9c99c0d23baf041c1320ed295a10c663a9339c32e97",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "3a6a7fcb-21c1-4cec-a2d4-ea665a3649d0",
+    "ts": "2025-09-04T04:46:32.066Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e28f6d16e224e26bfa37e82120ff19fdc7269479c67ec6c239001a549cc2bbc",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"whit\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "5987dacc-0583-4d14-a292-dfdd1d357c0a",
+    "ts": "2025-09-04T04:46:33.462Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "59dd7a10ec96ec866140c9c99c0d23baf041c1320ed295a10c663a9339c32e97",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "551b8cb2-d27e-496b-a8d1-fd88286232a8",
+    "ts": "2025-09-04T06:17:14.449Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "175c45fd42876817feac2ed5773f134349a1846484d58ea81e52367eb7eeda29",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "6d32f29a-463d-41e2-b34a-94b7767e76dd",
+    "ts": "2025-09-04T06:17:15.680Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "09bb64010895987a18de8bea3572e30a86f0c4be91ea561f2f5009f743b86872",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "a15ded52-b3cb-4cd3-9985-a60af5d88f03",
+    "ts": "2025-09-04T06:17:20.782Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "1e4f5ba0-4958-4fdf-861f-74480452c9a9",
+    "ts": "2025-09-04T06:17:24.325Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "0636f48b-bed9-4efc-8600-e025daaa2137",
+    "ts": "2025-09-04T06:17:24.829Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "d2e4fa68-8fdc-4429-b55c-196ee6422231",
+    "ts": "2025-09-04T06:17:26.920Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "b9d9641036dd0ec25df1b1ea7dd50b8025ee7e3245cd50516d78c54ea7928173",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "733a363d-1278-4951-9928-aa245c40a900",
+    "ts": "2025-09-04T06:17:33.162Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9f6d9a9f0b26a4b813f7fa5fd6d3dc3bc49e0e9d18468ec862abedfeaf066c28",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Camera\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "6daf6275-67f5-475c-8258-17bdeea6da00",
+    "ts": "2025-09-04T06:17:35.960Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "54e9b00004f364940aa5d3464137a6793ec38254e6d625ef2372c95256cc5cdb",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "df64ac64-b326-4591-9b25-32670e5e332b",
+    "ts": "2025-09-04T06:17:41.804Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c627b0a125481cca9c0d9f7444a2aa1dba03ae6d4fa867a2a981acc0b632f6c3",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "fba47744-ed19-492f-9a02-306ef938ffc5",
+    "ts": "2025-09-04T06:17:43.299Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "5c3adad5c8bc52ccc4e03cd96d9eda5051168b3ff251aca25b1b0e172786fa7d",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "854cb33d-782f-472f-ac90-c3d6219a5b58",
+    "ts": "2025-09-04T06:17:44.926Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9125b2114942842e185df6ace7c22d55ec411fe56dbb8bee337332ca948dcfe4",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "44208254-39de-4267-9c6b-e5f33b245450",
+    "ts": "2025-09-04T06:17:46.265Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "5c3adad5c8bc52ccc4e03cd96d9eda5051168b3ff251aca25b1b0e172786fa7d",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "a44cb92b-7fe7-4c31-9674-ee78ab9d645f",
+    "ts": "2025-09-04T06:17:48.345Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "8df0eebae84f58ae845ffa956e1db777c6676965fdb55d2f6d767602c6d0639c",
+    "findings": [
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "007f2bf8-e6b0-4a2c-be90-3f3a36c38d81",
+    "ts": "2025-09-04T06:17:49.188Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "68a82f2f63947322a6ed5272004efcf266f765f2732528ab08906996c59ed27c",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "84383c81-40a3-4015-b14e-50dcc9c9ad61",
+    "ts": "2025-09-04T06:17:56.361Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "295d05eb0d881a409d44716518399ab6585f1b50d8a118c584b40e5de8ee1eb7",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "warning",
+        "code": "CC_EXTREME",
+        "message": "Very unusual engine capacity",
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "65803396-3acc-47f6-979e-2fc91fd9b1ae",
+    "ts": "2025-09-04T06:17:56.926Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "bc9861c0ba624c4eac498e3dba571436abe1c89a58b697415622cb3c38fea8f0",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "error",
+        "code": "CC_INVALID",
+        "message": "Engine capacity must be a positive number",
+        "weight": 10
+      }
+    ],
+    "riskScore": 14,
+    "action": "allow"
+  },
+  {
+    "id": "54a62910-7a99-40c1-93c3-cb0194983ff7",
+    "ts": "2025-09-04T06:18:03.768Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7d167679150e044faa70f1a5906a2f9e00501e0b3d96181e30f1fc7d0d559ba3",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "b8805c3b-1a21-456f-8d68-0d58ca35f6bf",
+    "ts": "2025-09-04T06:18:04.611Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "294bc8e9354662d7d049f1f1f26c24915271e57a9b3c41af32b6a9e71a0e18df",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "8ed3f804-b1d0-4bdd-af7a-cae021d70391",
+    "ts": "2025-09-04T06:18:08.391Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "feec25de032a1ee1e9d9593b80230796b334eb86aca5105623e4a455e19983d6",
+    "findings": [
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"whit\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 6,
+    "action": "allow"
+  },
+  {
+    "id": "a5c601d8-f35f-4b8f-9808-8e90e48554c9",
+    "ts": "2025-09-04T06:18:11.142Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "5817bcdb5ec717ab9b5dedc71fd68ecaaf8e6764cd72ac17e2fb85f31d4d71d8",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "f0893787-af79-4824-a04f-cb9626d809eb",
+    "ts": "2025-09-04T06:18:28.249Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "5817bcdb5ec717ab9b5dedc71fd68ecaaf8e6764cd72ac17e2fb85f31d4d71d8",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "e5992e88-a969-4417-bfd6-3fe425b67c59",
+    "ts": "2025-09-04T06:18:58.595Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e3b81a81a26ba6d41cd0c733af83c98963ced484be2eeafa6d820e6e5965136f",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "3ae6a6fa-723f-4f00-8442-481437c4eb7b",
+    "ts": "2025-09-04T06:18:59.093Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e3b81a81a26ba6d41cd0c733af83c98963ced484be2eeafa6d820e6e5965136f",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "6606a142-a000-4582-8cf5-6d8274224933",
+    "ts": "2025-09-04T06:19:03.015Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d83a2a67ce819d27bf9a4e140e3398217ff95f2dd88a89a6ecc029d2af848017",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "008bd9fb-b4a9-433d-8c7a-98da181f13a4",
+    "ts": "2025-09-04T06:19:03.644Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d83a2a67ce819d27bf9a4e140e3398217ff95f2dd88a89a6ecc029d2af848017",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "89010a2c-c7a1-491e-bdc3-e9e05f94d61b",
+    "ts": "2025-09-04T06:21:10.640Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "7a2e5604-f6f5-435e-87a0-8e2136601bc2",
+    "ts": "2025-09-04T06:21:12.807Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "a37d347f-e9ba-46dc-84d3-0c7c0ae1a09c",
+    "ts": "2025-09-04T06:21:13.323Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "b58f12ab-9968-4b04-9926-78bb8efd5fd7",
+    "ts": "2025-09-04T06:21:16.288Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c1b1b867a043635a10c5465e73aab479d9741df1fcd423b61eeac5fd8b80b7aa",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "a5a4f42f-c933-4330-8739-7264e4a78e49",
+    "ts": "2025-09-04T06:21:29.476Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f6a7068e4a217768fc1bb0d8afd986bc1736e9289b94a9e2d603e2ca15995ae4",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Came\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "0e7a35f7-7255-4803-a9c1-e15f9d012be4",
+    "ts": "2025-09-04T06:21:32.008Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "54e9b00004f364940aa5d3464137a6793ec38254e6d625ef2372c95256cc5cdb",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "9066adb1-3bf6-4f36-8590-1c0c961d41d2",
+    "ts": "2025-09-04T06:21:40.662Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e8308acda041cc1e9cb091b2b19e42c3cb2156ae49945fed43a518af59c9de2b",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "e56c1c92-a62d-44c4-ac21-540ff10c3356",
+    "ts": "2025-09-04T06:21:43.728Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4b55fb91a5bce9c05abed0a20bf18bc43720c19bff673619e37f19273ca9e350",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "b32f3d3d-0eb9-4f5e-bf4b-e71f6a7f9deb",
+    "ts": "2025-09-04T06:21:47.873Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d503bb9d21938a689503553cfe6cf6041cfe2c18ff3bf3616cd74ee126209de9",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"cAM\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "3021d1c0-6b41-43d6-811d-ad7a52309e9d",
+    "ts": "2025-09-04T06:21:49.868Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "54e9b00004f364940aa5d3464137a6793ec38254e6d625ef2372c95256cc5cdb",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "3ad4370c-6bf0-42cf-adaa-438821abd7ab",
+    "ts": "2025-09-04T06:24:19.018Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "0705cd84-adea-4429-a2f3-ebe6f3e68fe2",
+    "ts": "2025-09-04T06:24:20.667Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "03a18905-87ef-47b3-a74b-e365542e531e",
+    "ts": "2025-09-04T06:24:21.174Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "99bb0558-4d12-498b-b568-0a834bb05152",
+    "ts": "2025-09-04T06:24:25.688Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "6c862fdd778ed39a7d62d57ce7be887cbe1104f521f78aab64df22a40a5707b4",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "3ca7242f-04a6-4777-a170-01e29a316b00",
+    "ts": "2025-09-04T06:24:27.604Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c37f74d195147726951d769cfc400e585bfa978e00d5ac2ef6e4f77df5fa1f27",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "c69e0d99-b7f7-4a5d-aa03-2cc9d730b3cd",
+    "ts": "2025-09-04T06:24:29.540Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "760d0aa7d9c42ae6269ed13764b1296b534e99a459edc130cabbad062eb7c0b6",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "7041095b-5ef4-4420-aa4b-24e08126724c",
+    "ts": "2025-09-04T06:24:32.862Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "534386f6157310f95e4606fa40b979cefce48d5670d942003895a195a44939ae",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"white\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 9,
+    "action": "allow"
+  },
+  {
+    "id": "b21e9c55-fe45-4e10-8340-3a6dd643c9de",
+    "ts": "2025-09-04T06:24:33.413Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "a848277c26972acec69c6e3a927ebda99d63dc63a12cb8c08e6d19b537833e8a",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"whit\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 9,
+    "action": "allow"
+  },
+  {
+    "id": "b92be23a-61ea-4154-9403-6c3390f951fc",
+    "ts": "2025-09-04T06:24:40.058Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e273ab389e7d84a6dcfff14f2c9bc3e7be5fa2fd30709cf1b2269d6455a6fa3a",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Camer\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "ea5a06a5-06c3-44e5-b23e-e53b122c97dd",
+    "ts": "2025-09-04T06:24:42.154Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "1b15aa49e5b9f5534c0d6f95d550f3f9b94f5c0698c20c7634544384f76ccda9",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "09c0e42e-39c7-4d11-805e-c3894d9e19c8",
+    "ts": "2025-09-04T06:24:53.136Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "aa8ebee5c9cb1bf70b1a0982ab4765b750821a97d20b1bef795cf78d0882b5ba",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "ac5974fe-ac5a-4cc3-96e2-93fa0eb36a75",
+    "ts": "2025-09-04T06:24:54.043Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4628649e9513aee059d965b048f631ea7dfd6362b5ccad33bbbee6247465e27c",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "f46012c4-5029-4a95-8340-d04babb4d175",
+    "ts": "2025-09-04T06:24:55.099Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "8a30ef27-84a2-4c1c-9f4f-d7d5277be19a",
+    "ts": "2025-09-04T06:24:56.214Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "1f65cc67-9364-4729-864f-f0d9d0b2150d",
+    "ts": "2025-09-04T06:24:56.727Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "7e5a59cee733fd539be1efd36a9a9bf823accc4bbec19638ed726ee9845c00c8",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "16b72c88-49c6-4b53-a019-e74245df8cac",
+    "ts": "2025-09-04T06:24:59.981Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "8bd4e4f87f0183296273c29268fa75d67a34dd35e8e12cdf62d3094b68ed004c",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "a1eef74c-f951-49cc-b69f-f2bb3d03284a",
+    "ts": "2025-09-04T06:25:01.540Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e9f8a70d2255ca161b1e2f7a6dd0806d8d54a94d874576f79c766b5354668347",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "e5dd2170-70be-4d82-b0e3-64380fb47109",
+    "ts": "2025-09-04T06:25:02.256Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e8308acda041cc1e9cb091b2b19e42c3cb2156ae49945fed43a518af59c9de2b",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "0d9b40ac-fc10-4cd0-b5c0-bc71ccdcb4d0",
+    "ts": "2025-09-04T06:25:05.267Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "46c412a50da7562d04da83884ab53ac94f3e5768c6f590e54817d829fd946458",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "17836ab2-b722-41e7-bfde-f3e775936e54",
+    "ts": "2025-09-04T06:25:07.158Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "98103fd41c50bda6b549b3cb74b3d05ea856c8c8c6c237f8774788635a88b133",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "a6ef0464-a206-4e14-8443-d04b2b0b86e4",
+    "ts": "2025-09-04T06:25:08.741Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "00105a1efa92c7fd139f70f7da5860d6e878907fe4e2a3ef294115a3b7e45e98",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "color",
+        "type": "warning",
+        "code": "COLOR_TYPO",
+        "message": "Possible typo in color \"whit\"",
+        "suggestion": "White",
+        "details": [
+          "Closest known color: White"
+        ],
+        "weight": 6
+      }
+    ],
+    "riskScore": 9,
+    "action": "allow"
+  },
+  {
+    "id": "51bbef7f-2c8e-483d-ab2c-75fc8ce427c6",
+    "ts": "2025-09-04T06:25:11.701Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "1b15aa49e5b9f5534c0d6f95d550f3f9b94f5c0698c20c7634544384f76ccda9",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "d9572f1e-e40f-495e-9314-a6f88dbf1c4d",
+    "ts": "2025-09-04T06:32:00.680Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "590e64fb3b937549c6b92a7295df5e84dd914dd00d1a91b71acf2d1d3c8c23d4",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "853f5cde-1188-4b58-ad02-eeca40404134",
+    "ts": "2025-09-04T06:32:04.828Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "92c6521ce5c6cc4c353fe74fb70481a2f4104e53b8164e9c5e6beb44d1fb3344",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "38292678-c8e9-407b-9ade-770a9bdc4746",
+    "ts": "2025-09-04T06:32:09.330Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2f4f4b4b3cf79af5cb0446c84d53bd7cf307b781b3e79c79f59aa06f07281f67",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "a8efde10-f13e-462b-bb1d-36c7f0de4ef0",
+    "ts": "2025-09-04T06:32:11.377Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e2914d7874acd897d008dcd5a1d7d488ebb08cd339b49b0c82f2e71faed578f6",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "fb6d346f-cf87-45bc-844f-b65b656d458e",
+    "ts": "2025-09-04T06:32:12.486Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2f4f4b4b3cf79af5cb0446c84d53bd7cf307b781b3e79c79f59aa06f07281f67",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "a6a86f01-ca4b-4f04-8be4-c5effc7a4ba8",
+    "ts": "2025-09-04T06:32:15.678Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2f4f4b4b3cf79af5cb0446c84d53bd7cf307b781b3e79c79f59aa06f07281f67",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "ae5756e4-f0d3-4a08-8549-4c40bb1eb7e9",
+    "ts": "2025-09-04T06:32:17.193Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "590e64fb3b937549c6b92a7295df5e84dd914dd00d1a91b71acf2d1d3c8c23d4",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "c2e87abb-2c1b-4894-a9ee-f5a8a089c3ce",
+    "ts": "2025-09-04T06:32:19.954Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d342de69d3095222c152becb39e0c3b40b98bcf2b57f3dbc0d4879f3941e3170",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "119f8dcb-e3d9-4e1d-897b-9e9c382f9614",
+    "ts": "2025-09-04T06:32:20.458Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d342de69d3095222c152becb39e0c3b40b98bcf2b57f3dbc0d4879f3941e3170",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "362a5161-d9be-44cb-bcb7-d2786cec046f",
+    "ts": "2025-09-04T06:32:21.547Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f5fc7922f9722d81a90b1895ac0f1ff9d874c30e0acd118cef9dff209bad8b8a",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "a2ccbcc2-9bdf-49e5-9e8e-98bafbb54a4b",
+    "ts": "2025-09-04T06:32:27.153Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d342de69d3095222c152becb39e0c3b40b98bcf2b57f3dbc0d4879f3941e3170",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "b2896d85-8d2f-4ff9-9dc5-9cbf16720fcc",
+    "ts": "2025-09-04T06:32:31.830Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "96709f8a1cbe585e375664cf3be1f214428c4e3ff16de25cb1a1191c3eae1497",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "1bab2662-5bcb-485a-9e25-2a815cbd36cb",
+    "ts": "2025-09-04T06:32:35.100Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d3d685ad74abb71adb89f7f6bad1e6b9794f969daf0acac973f08fb6809a18dd",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "8b785f9f-5d7d-4aa3-bb36-08a10c84f074",
+    "ts": "2025-09-04T06:32:51.655Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "a508473871e403d4112c32b00900419c9ee2a6ef82efc6da0a4e1ffedce67dbd",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "engineCapacity",
+        "type": "error",
+        "code": "CC_INVALID",
+        "message": "Engine capacity must be a positive number",
+        "weight": 10
+      }
+    ],
+    "riskScore": 17,
+    "action": "allow"
+  },
+  {
+    "id": "ac333e3c-24ca-4257-b6af-cccbdee7e8f7",
+    "ts": "2025-09-04T06:33:00.305Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "78cd746d426d6daa49e3cbdcd65fbd148a40f4926120e2bb4be582c592bf8842",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "engineCapacity",
+        "type": "warning",
+        "code": "CC_EXTREME",
+        "message": "Very unusual engine capacity",
+        "weight": 6
+      }
+    ],
+    "riskScore": 9,
+    "action": "allow"
+  },
+  {
+    "id": "237f5b89-2a0d-4d97-a62e-cfc385bd92bc",
+    "ts": "2025-09-04T06:33:03.783Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "5b24809ed12495cd8c992fadac34ebf464d017475cc1c7e04f24f7adc3ec5210",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Camera\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      },
+      {
+        "field": "engineCapacity",
+        "type": "warning",
+        "code": "CC_EXTREME",
+        "message": "Very unusual engine capacity",
+        "weight": 6
+      }
+    ],
+    "riskScore": 16,
+    "action": "allow"
+  },
+  {
+    "id": "5df218c7-1a70-4c68-9047-7617e0fd8b07",
+    "ts": "2025-09-04T06:33:06.648Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "e69309d4b961a46293f81d5d23d9285c4ce37b460da4111806c8d931ab8ecc27",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "error",
+        "code": "CC_INVALID",
+        "message": "Engine capacity must be a positive number",
+        "weight": 10
+      }
+    ],
+    "riskScore": 14,
+    "action": "allow"
+  },
+  {
+    "id": "b2ea822c-21d4-4b1a-a0ae-a3358f687005",
+    "ts": "2025-09-04T06:33:07.757Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "646e096b116b6fd830b577533be841216e0d887d851dad569466fcc433d8a53e",
+    "findings": [
+      {
+        "field": "engineCapacity",
+        "type": "error",
+        "code": "CC_INVALID",
+        "message": "Engine capacity must be a positive number",
+        "weight": 10
+      }
+    ],
+    "riskScore": 14,
+    "action": "allow"
+  },
+  {
+    "id": "cb979f25-3c06-4179-bba3-03b32969799e",
+    "ts": "2025-09-04T06:33:14.950Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c8dac6571d022c3afae279c43b5065bea58b10e6ff36e99c02eabd9aa2aa7a61",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "2d6007ab-9e6b-4935-8dd8-d2faf2a93d62",
+    "ts": "2025-09-04T06:33:17.607Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "d660b35d56faa6a304c28fcef3128bdf4215a167c3b56bb549d539e28bab13df",
+    "findings": [],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "3a8d40b9-7e25-43d2-af03-0ede8cb31154",
+    "ts": "2025-09-04T06:33:23.697Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "54bb3b0caab1f757bcabefdd31f6f136819031299580fe247b47733c1a8ba867",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "success",
+        "code": "VIN_OK",
+        "message": "VIN format & check digit OK"
+      }
+    ],
+    "riskScore": 0,
+    "action": "allow"
+  },
+  {
+    "id": "3913c605-4c1f-4288-be6e-0803354e04b6",
+    "ts": "2025-09-04T06:33:27.577Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "14f1621dc4a6f4918a6c15c67b9ca932fd94f05803260753ecc9ff723dacd8e4",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "4eb3dfd9-bca3-4add-8b72-badb3104a1e3",
+    "ts": "2025-09-04T06:33:36.478Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "921b95aaa815d5bb82b24153a99ab21d7aaf2c91cea5919e8a0a403d487e2137",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "cc923624-2a42-4598-bbc7-f54a885d7724",
+    "ts": "2025-09-04T06:33:37.765Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "da10c49437a2695b1c92b5c2cdf20d0b54dcd8ee4f5cc112712dc7f056d93897",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "471ee4eb-a8f8-402f-8385-c732d99929fa",
+    "ts": "2025-09-04T06:33:38.291Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "bf559f0267cab917189be3ba8301cb0d2b03770c8737dcf66bb53dc65a5f0b8f",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "1463cbd3-b8e3-4a04-ba9c-bb3c07782b12",
+    "ts": "2025-09-04T06:33:40.308Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "257bb56a94827b71604e6d64cd02d7cbd254a9e8481be297425d5792cdae12ef",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "568296e6-fd99-4378-9f66-4a4a2ff962e2",
+    "ts": "2025-09-04T06:33:40.943Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "4662f413a8b0bf04d29ac516f7d946a4893286a2ecf13f5f08f3796c8103fafe",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "49ddc1fb-2b8e-4dc6-8ef7-619f8a31adfb",
+    "ts": "2025-09-04T06:33:41.617Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "3bfe8e3224d74360d1a2679f1d50db4f747b364ad1c51f7dd56a60847c8b8d6e",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "error",
+        "code": "VIN_LEN",
+        "message": "VIN must be exactly 17 characters",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "f5623308-0fda-412c-86fc-d200265e50aa",
+    "ts": "2025-09-04T06:33:49.339Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "bc6a4cb7b9673f974f808c21c6464d9c14fce2487f8434be5b33de209c53dc83",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "warning",
+        "code": "VIN_CHECK",
+        "message": "VIN check digit mismatch",
+        "details": [
+          "Expected 4, got 9"
+        ],
+        "weight": 12
+      }
+    ],
+    "riskScore": 12,
+    "action": "allow"
+  },
+  {
+    "id": "492a20dd-5ebe-4467-8fb6-1f231ab1caec",
+    "ts": "2025-09-04T06:36:37.672Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "bc6a4cb7b9673f974f808c21c6464d9c14fce2487f8434be5b33de209c53dc83",
+    "findings": [
+      {
+        "field": "chassisNumber",
+        "type": "warning",
+        "code": "VIN_CHECK",
+        "message": "VIN check digit mismatch",
+        "details": [
+          "Expected 4, got 9"
+        ],
+        "weight": 12
+      }
+    ],
+    "riskScore": 12,
+    "action": "allow"
+  },
+  {
+    "id": "d3138836-bbfa-433f-a1e2-182b4c31ab27",
+    "ts": "2025-09-04T06:36:48.732Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9d3b404e93f23a15b2ca4960c3bc7397c51d3d1a92e2e1173a966a271e9e67f1",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Cam\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "6d99c18a-028a-47f4-8713-235a28730ac5",
+    "ts": "2025-09-04T06:36:50.480Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "522adca41722f23fe7dbc0cbc00b033d051d604080b086cef594cc0172c67e5c",
+    "findings": [
+      {
+        "field": "model",
+        "type": "warning",
+        "code": "MODEL_TYPO",
+        "message": "Possible typo in model \"Camera\"",
+        "suggestion": "Camry",
+        "details": [
+          "Valid models for Toyota: Vios, Corolla, Camry, Hilux"
+        ],
+        "weight": 10
+      }
+    ],
+    "riskScore": 10,
+    "action": "allow"
+  },
+  {
+    "id": "ecbb5ecd-522b-43bf-a83c-faf38d6e94fe",
+    "ts": "2025-09-04T06:36:53.922Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "0c3424f1ea8ad3493d286c93231d44bfaf31c96621f898dddf4fe08d5f1843b6",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "da26d154-c232-4700-b67a-44d8dfd39785",
+    "ts": "2025-09-04T06:36:54.422Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "0c3424f1ea8ad3493d286c93231d44bfaf31c96621f898dddf4fe08d5f1843b6",
+    "findings": [
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 3,
+    "action": "allow"
+  },
+  {
+    "id": "cfd467ef-dcee-41bc-9e21-9f6d242bf629",
+    "ts": "2025-09-04T06:37:00.354Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f8d5b5d1d13912f9a4d13b2222b5ac338e5c3e4f373d352219d7ecda358d1489",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 24,
+    "action": "allow"
+  },
+  {
+    "id": "2cd22828-be35-4483-8811-02b547a477e1",
+    "ts": "2025-09-04T06:37:05.722Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9446ee96822376a7e971e735d7149a5b5499f4753c21660e21051eb433367e42",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "65f1b505-9a02-4f44-b2fc-c8432cf0112a",
+    "ts": "2025-09-04T06:38:12.608Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "5c1cb30cee6b94cd7da9045e1f4b5796a28172f08464560af5146fb0ae417fd0",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      }
+    ],
+    "riskScore": 21,
+    "action": "allow"
+  },
+  {
+    "id": "715525f1-62e0-4e03-accc-afd99e9cf657",
+    "ts": "2025-09-04T06:38:16.033Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2295debbaf020d4d01bc41ded347a793d2bb44894322ea68e73d5665b6f8ce68",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 24,
+    "action": "allow"
+  },
+  {
+    "id": "5332bd11-3dc5-4357-8efa-d4aa45bc75a3",
+    "ts": "2025-09-04T06:38:16.541Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "2295debbaf020d4d01bc41ded347a793d2bb44894322ea68e73d5665b6f8ce68",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 24,
+    "action": "allow"
+  },
+  {
+    "id": "90a4982a-1cea-4566-97ab-3ecae5d51aba",
+    "ts": "2025-09-04T06:38:21.101Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "714efe1f67f632f993bbc90cac2db6789e69fad1c1889ba36bd92f79821f39fb",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 24,
+    "action": "allow"
+  },
+  {
+    "id": "4c1fae78-c02f-4859-81cf-44732502e3c8",
+    "ts": "2025-09-04T06:38:24.964Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "f63ed01a7e1a636ecddff292e0451f9e5b8a466928313047a583366d595c3242",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 24,
+    "action": "allow"
+  },
+  {
+    "id": "07361151-0aa1-4698-9aa8-a873579b56fc",
+    "ts": "2025-09-04T06:38:33.560Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "c58c20b8c7a57daecf9c9bc0c613f57e99b5180753d214a1591c1bf59f09ae96",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      }
+    ],
+    "riskScore": 24,
+    "action": "allow"
+  },
+  {
+    "id": "4d14a644-01ca-4485-9659-92e135cee489",
+    "ts": "2025-09-04T06:38:53.834Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "cda8e51953c9c485b745f0d4b27a6982e77a99721029379d91815d3e6095bbd4",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "year",
+        "type": "warning",
+        "code": "YEAR_OUT_OF_RANGE",
+        "message": "Unusual year 1902",
+        "weight": 8
+      }
+    ],
+    "riskScore": 32,
+    "action": "review"
+  },
+  {
+    "id": "7c613cb5-d574-4701-b904-b0bf55b19a32",
+    "ts": "2025-09-04T06:38:55.077Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9fa2d712f3b22101c5a02c68fbf829069ef417e2f57f0bd39e9b9cb421a99f3d",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "year",
+        "type": "warning",
+        "code": "YEAR_OUT_OF_RANGE",
+        "message": "Unusual year 1900",
+        "weight": 8
+      }
+    ],
+    "riskScore": 32,
+    "action": "review"
+  },
+  {
+    "id": "9844af7d-26a9-4f17-b9aa-a1bd5e71c90c",
+    "ts": "2025-09-04T06:39:06.191Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "1eec1f9f8654b51729a23a274b31b2b985189a8f268634b74cc5ef1903201437",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      }
+    ],
+    "riskScore": 45,
+    "action": "review"
+  },
+  {
+    "id": "3dca530e-b59d-4968-8ed1-69f35fd9c65d",
+    "ts": "2025-09-04T06:39:14.926Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "196a6c79c1fdfc3dfe99fd9fcf5e0f26ffca990e113a2c3926573cefa5610fac",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "make",
+        "type": "info",
+        "code": "MAKE_UNCOMMON",
+        "message": "Uncommon vehicle make",
+        "weight": 5
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"hmm balck\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 46,
+    "action": "review"
+  },
+  {
+    "id": "d3105600-1689-4cae-b373-2eb111c48e23",
+    "ts": "2025-09-04T06:39:29.181Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "9480fe9c1df55ccc8a970d61477a846a8469a31bcdebc1ed55ed6a26eeeb7517",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "1b1bf282-cec8-4443-b3cc-accf51cac7b5",
+    "ts": "2025-09-04T06:39:29.636Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "dfdbaabe-fe24-457a-87d3-8efd5134099f",
+    "ts": "2025-09-04T06:39:29.988Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "c8e2987d-2500-4a13-bc26-5a3d3d666d40",
+    "ts": "2025-09-04T06:39:30.373Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "1345a232-97e3-4208-b983-80b19daae716",
+    "ts": "2025-09-04T06:39:30.522Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "03e107fa-2d41-4bd8-8ce1-731361dc66df",
+    "ts": "2025-09-04T06:39:32.171Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "ada8b9de-9909-4b6a-8196-eb11fdb1a874",
+    "ts": "2025-09-04T06:39:32.552Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "0770bd3a-ceeb-4039-9c0c-7d72109aefa4",
+    "ts": "2025-09-04T06:39:32.860Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "a62c55c4-8527-4887-93fc-63f8db1512cd",
+    "ts": "2025-09-04T06:39:33.040Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "62407074-9884-40fb-8fe6-9d54a7c98687",
+    "ts": "2025-09-04T06:39:33.203Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "af0a1cab-24eb-4044-8e74-5b0f8aa82a73",
+    "ts": "2025-09-04T06:39:33.361Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
+  },
+  {
+    "id": "ebe8105f-8a5e-4d67-bc32-71d528b0b3cc",
+    "ts": "2025-09-04T06:39:33.511Z",
+    "ip": "::1",
+    "fingerprint": "unknown",
+    "payloadHash": "417bfbb7c9ebc2ee461d8fa75fc4864236503517beb9813660c4e9dc8f333ce8",
+    "findings": [
+      {
+        "field": "plateNumber",
+        "type": "error",
+        "code": "PLATE_FORMAT",
+        "message": "Invalid plate number format",
+        "weight": 15
+      },
+      {
+        "field": "model",
+        "type": "error",
+        "code": "MODEL_MISMATCH",
+        "message": "Model \"Came\" does not belong to make \"BMW\"",
+        "details": [
+          "Valid models for BMW: 3 Series, 5 Series, X5"
+        ],
+        "weight": 20
+      },
+      {
+        "field": "year",
+        "type": "error",
+        "code": "YEAR_INVALID",
+        "message": "Year must be a 4-digit number",
+        "weight": 15
+      },
+      {
+        "field": "color",
+        "type": "info",
+        "code": "COLOR_UNCOMMON",
+        "message": "Uncommon color \"Verify color name or use closest standard color\" entered",
+        "details": [
+          "Typical colors: White, Black, Silver, Gray, Blue, Red, Green, Yellow, Brown, Gold"
+        ],
+        "weight": 3
+      }
+    ],
+    "riskScore": 72,
+    "action": "block"
   }
 ]

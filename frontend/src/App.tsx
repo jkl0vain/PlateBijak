@@ -4,6 +4,8 @@ import { VehicleForm } from './components/VehicleForm'
 import { ValidationResults } from './components/ValidationResults'
 import { Dashboard } from './components/Dashboard'
 import { VehicleData, ValidationResult } from './types/vehicle'
+import debounce from 'lodash.debounce'
+import { useMemo } from 'react'
 
 function App() {
   const [currentView, setCurrentView] = useState<'form' | 'dashboard'>('form')
@@ -22,19 +24,22 @@ function App() {
   const [riskScore, setRiskScore] = useState<number | null>(null)
   const [action, setAction] = useState<'allow' | 'review' | 'block' | null>(null)
 
-  const handleValidation = async (data: VehicleData) => {
+  
+  //lama
+  /*const handleValidation = async (data: VehicleData) => {
     setIsValidating(true)
     setVehicleData(data)
 
-    // ada fingerprint (currently based on browser)
-    const fp = localStorage.getItem('svv_fp') || cryptoRandom();
-    localStorage.setItem('svv_fp', fp);
+    // [TAK FUNCTION DALAM DEMO, TAPI JANGAN BUANG] ada fingerprint (currently based on browser)
+    //const fp = localStorage.getItem('svv_fp') || cryptoRandom();
+    //localStorage.setItem('svv_fp', fp);
 
     try {
       const resp = await fetch('http://localhost:4000/api/validate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, fingerprint: fp })
+        //body: JSON.stringify({ ...data, fingerprint: fp })      //ada fingerprint
+        body: JSON.stringify(data)    //no fingerprint
       })
       const json = await resp.json()
       setValidationResults(json.results)
@@ -52,7 +57,43 @@ function App() {
     } finally {
       setIsValidating(false)
     }
+  }*/
+  //baru
+  const handleValidation = async (data: VehicleData) => {
+    setIsValidating(true)
+    setVehicleData(data)
+
+    // run local validation instantly
+    const localResults = validateVehicleData(data)
+    setValidationResults(localResults)
+
+    // fire backend request in background
+    try {
+      const resp = await fetch('http://localhost:4000/api/validate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      const json = await resp.json()
+
+      // merge backend findings with local
+      setValidationResults([...localResults, ...json.results])
+      setRiskScore(json.riskScore)
+      setAction(json.action)
+    } catch (e) {
+      console.error("Backend error:", e)
+    } finally {
+      setIsValidating(false)
+    }
   }
+
+  // ✅ Debounce wrapper: only call handleValidation after 500ms of no typing
+    const debouncedValidate = useMemo(
+      () => debounce((data: VehicleData) => handleValidation(data), 500),
+      [] // no dependencies so it's created once
+    )
+
+
 
   function cryptoRandom() {
     return (crypto as any)?.randomUUID?.() ?? Math.random().toString(36).slice(2)
@@ -83,7 +124,7 @@ function App() {
   */
 
   //semua ni dah edit dekat backend, TAPI JANGAN DELETE LAGI
-  /*const validateVehicleData = (data: VehicleData): ValidationResult[] => {
+  const validateVehicleData = (data: VehicleData): ValidationResult[] => {
     const results: ValidationResult[] = []
     
     // Plate number validation with detailed reasons
@@ -111,15 +152,16 @@ function App() {
           issues.push('Contains invalid characters (only letters, numbers, and spaces allowed)')
         }
         
-        results.push({
-          field: 'plateNumber',
-          type: 'error',
-          message: 'Invalid plate number format detected',
-          reason: 'The plate number does not match standard formatting requirements',
-          details: issues,
-          suggestion: 'Use format like "ABC 1234" or "WXY 123A". Common formats: 3 letters + 4 numbers, or 2 letters + 4 numbers + 1 letter',
-          confidence: 0.95
-        })
+       results.push({
+        field: 'plateNumber',
+        type: 'error',
+        message: 'Invalid plate number format detected',
+        details: [
+          'Use format like "ABC 1234" or "WXY 123A"',
+          'Common formats: 3 letters + 4 numbers, or 2 letters + 4 numbers + 1 letter'
+        ],
+        confidence: 0.95
+      })
       } else {
         // Check for suspicious patterns
         const suspiciousPatterns = [
@@ -151,53 +193,23 @@ function App() {
       }
     }
 
-    // Enhanced make validation with detailed typo analysis
+    // Enhanced make validation with trimming + normalization
     if (data.make) {
       const commonMakes = [
         'Toyota', 'Honda', 'Nissan', 'Mazda', 'Mitsubishi', 'Hyundai', 'Kia', 
         'BMW', 'Mercedes-Benz', 'Audi', 'Volkswagen', 'Ford', 'Chevrolet', 
         'Subaru', 'Lexus', 'Infiniti', 'Acura', 'Volvo', 'Jaguar', 'Land Rover'
       ]
-      
-      const closestMatch = findClosestMatch(data.make, commonMakes)
-      const exactMatch = commonMakes.find(make => make.toLowerCase() === data.make.toLowerCase())
-      
-      if (exactMatch && exactMatch !== data.make) {
-        // Case mismatch
-        results.push({
-          field: 'make',
-          type: 'warning',
-          message: 'Case formatting issue detected',
-          reason: 'Vehicle make has incorrect capitalization',
-          details: [`Expected: "${exactMatch}"`, `Found: "${data.make}"`],
-          suggestion: `Auto-correct to "${exactMatch}"`,
-          confidence: 0.95
-        })
-      } else if (closestMatch.distance > 0 && closestMatch.distance <= 2) {
-        // Typo detected
-        const typoReasons: string[] = []
-        if (Math.abs(data.make.length - closestMatch.match.length) > 0) {
-          typoReasons.push('Length mismatch detected')
-        }
-        if (closestMatch.distance === 1) {
-          typoReasons.push('Single character difference (likely typo)')
-        } else {
-          typoReasons.push('Multiple character differences detected')
-        }
-        
-        results.push({
-          field: 'make',
-          type: 'warning',
-          message: `Possible typo in vehicle make`,
-          reason: 'Input does not match known vehicle manufacturers exactly',
-          details: typoReasons.concat([
-            `Similarity: ${Math.round((1 - closestMatch.distance / Math.max(data.make.length, closestMatch.match.length)) * 100)}%`,
-            `Closest match: "${closestMatch.match}"`
-          ]),
-          suggestion: `Did you mean "${closestMatch.match}"?`,
-          confidence: 0.85
-        })
-      } else if (commonMakes.includes(data.make)) {
+
+      // Normalize input (trim + lowercase for comparison)
+      const inputMake = data.make.trim()
+      const lowerInput = inputMake.toLowerCase()
+
+      // Exact match ignoring case
+      const exactMatch = commonMakes.find(make => make.toLowerCase() === lowerInput)
+
+      if (exactMatch) {
+        // ✅ Verified — no case warning, always success
         results.push({
           field: 'make',
           type: 'success',
@@ -205,22 +217,54 @@ function App() {
           reason: 'Matches known vehicle manufacturer database',
           confidence: 0.99
         })
-      } else if (closestMatch.distance > 2) {
-        results.push({
-          field: 'make',
-          type: 'info',
-          message: 'Uncommon vehicle make detected',
-          reason: 'Vehicle make not found in common manufacturers database',
-          details: [
-            'This could be a rare, luxury, or regional brand',
-            'Manual verification may be required',
-            `Closest known make: "${closestMatch.match}"`
-          ],
-          suggestion: 'Verify spelling or check if this is a valid manufacturer',
-          confidence: 0.60
-        })
+      } else {
+        // Run typo detection
+        const closestMatch = findClosestMatch(inputMake, commonMakes)
+
+        if (closestMatch.distance > 0 && closestMatch.distance <= 2) {
+          const typoReasons: string[] = []
+          if (Math.abs(inputMake.length - closestMatch.match.length) > 0) {
+            typoReasons.push('Length mismatch detected')
+          }
+          if (closestMatch.distance === 1) {
+            typoReasons.push('Single character difference (likely typo)')
+          } else {
+            typoReasons.push('Multiple character differences detected')
+          }
+
+          results.push({
+            field: 'make',
+            type: 'warning',
+            message: `Possible typo in vehicle make`,
+            reason: 'Input does not match known vehicle manufacturers exactly',
+            details: typoReasons.concat([
+              `Similarity: ${Math.round(
+                (1 - closestMatch.distance / Math.max(inputMake.length, closestMatch.match.length)) * 100
+              )}%`,
+              `Closest match: "${closestMatch.match}"`
+            ]),
+            suggestion: closestMatch.match,
+            confidence: 0.85
+          })
+        } else {
+          // Rare/uncommon brand
+          results.push({
+            field: 'make',
+            type: 'info',
+            message: 'Uncommon vehicle make detected',
+            reason: 'Vehicle make not found in common manufacturers database',
+            details: [
+              'This could be a rare, luxury, or regional brand',
+              'Manual verification may be required'
+            ],
+            suggestion: 'Verify spelling or check if this is a valid manufacturer',
+            confidence: 0.60
+          })
+        }
       }
     }
+
+    
 
     // Enhanced year validation with detailed analysis
     if (data.year) {
@@ -453,14 +497,19 @@ function App() {
         })
       } else if (colorMatch.distance <= 2) {
         results.push({
-          field: 'color',
-          type: 'warning',
-          message: 'Possible color name typo',
-          reason: 'Color name is similar to common vehicle colors',
-          details: [`Closest match: "${colorMatch.match}"`, `Similarity: ${Math.round((1 - colorMatch.distance / Math.max(data.color.length, colorMatch.match.length)) * 100)}%`],
-          suggestion: `Did you mean "${colorMatch.match}"?`,
-          confidence: 0.75
-        })
+        field: 'color',
+        type: 'warning',
+        message: 'Possible color name typo',
+        reason: 'Color name is similar to common vehicle colors',
+        details: [
+          `Closest match: "${colorMatch.match}"`,
+          `Similarity: ${Math.round(
+            (1 - colorMatch.distance / Math.max(data.color.length, colorMatch.match.length)) * 100
+          )}%`
+        ],
+        suggestion: colorMatch.match,   // ✅ correct
+        confidence: 0.75
+      })
       } else {
         results.push({
           field: 'color',
@@ -512,9 +561,9 @@ function App() {
     }
 
     return results
-  }*/
+  }
 
-  /*const findClosestMatch = (input: string, options: string[]) => {
+  const findClosestMatch = (input: string, options: string[]) => {
     let minDistance = Infinity
     let closestMatch = ''
     
@@ -527,9 +576,9 @@ function App() {
     })
     
     return { match: closestMatch, distance: minDistance }
-  }*/
+  }
 
-  /*const levenshteinDistance = (str1: string, str2: string): number => {
+  const levenshteinDistance = (str1: string, str2: string): number => {
     const matrix: number[][] = []
 
     for (let i = 0; i <= str2.length; i++) {
@@ -555,7 +604,44 @@ function App() {
     }
     
     return matrix[str2.length][str1.length]
-  }*/
+  }
+
+  //auto correction - user boleh click after "Did you mean ___?" sign
+  const handleApplySuggestion = (field: string, suggestion: string) => {
+    const newData = {
+      ...vehicleData,
+      [field]: suggestion
+    };
+
+    // update the input field
+    setVehicleData(newData);
+
+    // re-run validation immediately so warnings disappear
+    handleValidation(newData);
+    
+
+  };
+
+  //apply all suggestions at once
+  const handleApplyAllSuggestions = () => {
+    // start with current data
+    let newData = { ...vehicleData };
+
+    // apply all available suggestions at once
+    validationResults.forEach(r => {
+      if (r.suggestion && r.field) {
+        newData[r.field as keyof VehicleData] = r.suggestion;
+      }
+    });
+
+  // update state only once
+  setVehicleData(newData);
+
+  // run validation once on the corrected object
+  handleValidation(newData);
+};
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -575,9 +661,10 @@ function App() {
             
             <div className="grid lg:grid-cols-2 gap-8">
               <VehicleForm 
-                onValidate={handleValidation}
+                onValidate={debouncedValidate} 
                 isValidating={isValidating}
                 initialData={vehicleData}
+                action={action}
               />
               
               <ValidationResults 
@@ -587,8 +674,8 @@ function App() {
                 //tambah baru untuk fraud detection
                 riskScore={riskScore}
                 action={action}
-                //onApplySuggestion={handleApplySuggestion}
-                //onApplyAll={handleApplyAllSuggestions}
+                onApplySuggestion={handleApplySuggestion}
+                onApplyAll={handleApplyAllSuggestions}
                 //onSubmitAnyway={handleSubmitAnyway}
               />
             </div>

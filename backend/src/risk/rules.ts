@@ -9,6 +9,8 @@ export type Finding = {
   message: string;
   details?: string[];
   weight?: number;           // contribution to risk
+  suggestion?: string;  
+  confidence?: number;   
 };
 
 const commonMakes = new Set([
@@ -35,12 +37,101 @@ export function runRules(d: VehicleData, ctx: {ip?:string, attemptsFromIp?:numbe
   }
 
   // Make sanity
-  if (d.make) {
-    if (!commonMakes.has(d.make.trim())) {
-      out.push({ field:'make', type:'info', code:'MAKE_UNCOMMON',
-        message:'Uncommon vehicle make', weight:5 });
+if (d.make) {
+  if (!commonMakes.has(d.make.trim())) {
+    out.push({
+      field: 'make',
+      type: 'info',
+      code: 'MAKE_UNCOMMON',
+      message: 'Uncommon vehicle make',
+      weight: 5
+    })
+  }
+}
+
+  // Utility: Levenshtein distance
+  function levenshtein(a: string, b: string): number {
+    const dp = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+    for (let i = 0; i <= a.length; i++) dp[i][0] = i;
+    for (let j = 0; j <= b.length; j++) dp[0][j] = j;
+
+    for (let i = 1; i <= a.length; i++) {
+      for (let j = 1; j <= b.length; j++) {
+        dp[i][j] = a[i - 1] === b[j - 1]
+          ? dp[i - 1][j - 1]
+          : Math.min(
+              dp[i - 1][j - 1] + 1,
+              dp[i][j - 1] + 1,
+              dp[i - 1][j] + 1
+            );
+      }
+    }
+    return dp[a.length][b.length];
+  }
+
+  function findClosest(input: string, options: string[]) {
+    let best = { match: '', distance: Infinity };
+    for (const opt of options) {
+      const dist = levenshtein(input.toLowerCase(), opt.toLowerCase());
+      if (dist < best.distance) best = { match: opt, distance: dist };
+    }
+    return best;
+  }
+
+  // Cross check maker with model
+if (d.make && d.model) {
+  const combos: Record<string, string[]> = {
+    Toyota: ['Vios', 'Corolla', 'Camry', 'Hilux'],
+    Honda: ['Civic', 'Accord', 'City', 'CR-V'],
+    Nissan: ['Almera', 'X-Trail', 'Navara'],
+    Mazda: ['CX-5', 'Mazda3', 'Mazda6'],
+    Mitsubishi: ['ASX', 'Outlander', 'Triton'],
+    Hyundai: ['Elantra', 'Tucson', 'Santa Fe'],
+    Kia: ['Rio', 'Sportage', 'Sorento'],
+    BMW: ['3 Series', '5 Series', 'X5'],
+    'Mercedes-Benz': ['C-Class', 'E-Class', 'GLC'],
+    Audi: ['A3', 'A4', 'Q5'],
+    Volkswagen: ['Golf', 'Passat', 'Tiguan'],
+    Ford: ['Focus', 'Ranger', 'Everest'],
+    Chevrolet: ['Cruze', 'Colorado', 'Captiva'],
+    Subaru: ['Impreza', 'Forester', 'XV'],
+    Lexus: ['IS', 'RX', 'NX'],
+    Infiniti: ['Q50', 'QX60'],
+    Acura: ['ILX', 'RDX', 'MDX'],
+    Volvo: ['S60', 'XC60', 'XC90'],
+    Jaguar: ['XE', 'XF', 'F-PACE'],
+    'Land Rover': ['Range Rover', 'Discovery', 'Defender']
+  }
+
+  const make = d.make.trim()
+  const validModels = combos[make] || []
+  const model = d.model.trim()
+
+  if (validModels.length && !validModels.includes(model)) {
+    const { match, distance } = findClosest(model, validModels)
+
+    if (distance <= 2) {
+      out.push({
+        field: 'model',
+        type: 'warning',
+        code: 'MODEL_TYPO',
+        message: `Possible typo in model "${model}"`,
+        suggestion: match,  
+        details: [`Valid models for ${make}: ${validModels.join(', ')}`],
+        weight: 10
+      })
+    } else {
+      out.push({
+        field: 'model',
+        type: 'error',
+        code: 'MODEL_MISMATCH',
+        message: `Model "${model}" does not belong to make "${make}"`,
+        details: [`Valid models for ${make}: ${validModels.join(', ')}`],
+        weight: 20
+      })
     }
   }
+}
 
   // Year sanity
   if (d.year) {
@@ -73,14 +164,50 @@ export function runRules(d: VehicleData, ctx: {ip?:string, attemptsFromIp?:numbe
   }
 
   // Behavior signals
-  if ((ctx.attemptsFromIp ?? 0) > 10) {
+  if ((ctx.attemptsFromIp ?? 0) > 1000) {
     out.push({ field:'behavior', type:'warning', code:'IP_BURST',
       message:'High submission volume from this IP', weight:12 });
   }
-  if ((ctx.recentFromFingerprint ?? 0) > 5) {
-    out.push({ field:'behavior', type:'warning', code:'DEVICE_BURST',
-      message:'Many attempts from this device', weight:10 });
-  }
+
+  //tak perlu lagi buat fingerprint untuk demo, menyusahkan
+  //const enableFingerprint = false;
+  //if ((ctx.recentFromFingerprint ?? 0) > 5) {
+  //  out.push({ field:'behavior', type:'warning', code:'DEVICE_BURST',
+  //    message:'Many attempts from this device', weight:10 });
+  //}
+
+  // Color sanity + auto-correction
+  /*if (d.color) {
+    const commonColors = [
+      'White', 'Black', 'Silver', 'Gray', 'Blue',
+      'Red', 'Green', 'Yellow', 'Brown', 'Gold'
+    ];
+
+    const color = d.color.trim();
+    if (!commonColors.includes(color)) {
+      const { match, distance } = findClosest(color, commonColors);
+
+      if (distance <= 2) {
+        out.push({
+          field: 'color',
+          type: 'warning',
+          code: 'COLOR_TYPO',
+          message: `Possible typo in color "${color}"`,
+          details: [`Closest known color: ${match}`],
+          weight: 6
+        });
+      } else {
+        out.push({
+          field: 'color',
+          type: 'info',
+          code: 'COLOR_UNCOMMON',
+          message: `Uncommon color "${color}" entered`,
+          details: [`Typical colors: ${commonColors.join(', ')}`],
+          weight: 3
+        });
+      }
+    }
+  }*/
 
   return out;
 }
