@@ -28,9 +28,10 @@ PlateBijak validates and corrects data in real-time:
 - Risk-Aware Submission: Validate button only enabled when risk is Allow or Review, blocked otherwise.
 
 Demo Scenarios:
-Allow: Valid details → Success.
-Block: High-risk/fraudulent (fake VIN, repeated plate) → Submission disabled.
-Review: Suspicious but possible (rare model/engine) → Flagged for manual verification from admin.
+- Allow: Valid details → Success.
+- Block: High-risk/fraudulent (fake VIN, repeated plate) → Submission disabled.
+- Review: Suspicious but possible (rare model/engine) → Flagged for manual verification from admin.
+- AI Chatbot and Camera functionalities to enhance user experience (UX).
 
 🛠 Tech Stack:
 - Frontend: React + TypeScript + TailwindCSS
