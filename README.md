@@ -33,7 +33,7 @@ Demo Scenarios:
 - Review: Suspicious but possible (rare model/engine) → Flagged for manual verification from admin.
 - AI Chatbot and Camera functionalities to enhance user experience (UX).
 
-🛠 Tech Stack:
+Tech Stack:
 - Frontend: React + TypeScript + TailwindCSS
 - Inputs: Camera (OCR), Microphone (Voice via Google APIs + FFmpeg), Keyboard
 - Backend: Node.js + Express + CORS
